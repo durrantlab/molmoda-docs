@@ -2,6 +2,14 @@
 
 This repository contains the documentation for Biotite, developed by the Durrant Lab at the University of Pittsburgh.
 
+## Editing
+
+You can create a live server to view changes in real time by running the following command.
+
+```bash
+make serve
+```
+
 ## Building
 
 To compile the website, run the following bash command in the repository root.
@@ -37,4 +45,4 @@ git push --follow-tags
 
 ## License
 
-All data, information, documentation, and associated content provided within this project are released under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en) as specified in [`LICENSE`](https://github.com/durrantlab/biotite-docs).
+All data, information, documentation, and associated content provided within this project are released under the [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en) as specified in [`LICENSE`](https://github.com/durrantlab/biotite-docs).

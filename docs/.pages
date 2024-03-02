@@ -1,8 +1,2 @@
 nav:
     - Home: index.md
-    - 0.0 Introduction: intro
-    - 1.0 Sequencing: sequencing
-    - 2.0 Alignment: alignment
-    - 3.0 Genomics: genomics
-    - 4.0 Transcriptomics: transcriptomics
-    - Appendices: appendices

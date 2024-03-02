@@ -3,10 +3,9 @@ docs_dir: docs
 site_name: Biotite Documentation
 site_author: Durrant Lab
 
-repo_name: durrantlab/biotite
+repo_name: durrantlab/biotite-suite
 repo_url: https://github.com/durrantlab/biotite-docs
-edit_uri: -/edit/main/omics
-copyright: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> by OASCI
+copyright: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> by Durrant Lab
 
 # https://squidfunk.github.io/mkdocs-material/
 theme:
@@ -29,19 +28,14 @@ theme:
     text: Roboto
     code: Roboto Mono
   icon:
-    repo: fontawesome/brands/gitlab
+    repo: fontawesome/brands/github
     annotation: material/star-four-points-circle
   features:
-    # - content.action.edit
-    # - content.action.view
     - content.code.annotate
     - content.code.copy
     - content.code.select
     - content.tooltips
     - content.tabs.link
-    # - navigation.instant
-    # - navigation.instant.prefetch
-    # - navigation.instant.progress
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.tracking
