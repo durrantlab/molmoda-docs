@@ -2,6 +2,19 @@
 
 This repository contains the documentation for Biotite, developed by the Durrant Lab at the University of Pittsburgh.
 
+## Environment
+
+We use GNU Make to automate development; thus, please make sure you have this installed on your system.
+This repository uses [Material for MKDocs](https://squidfunk.github.io/mkdocs-material/) that is managed with a conda environment.
+Run
+
+```bash
+make environment
+```
+
+to create a conda environment called `biotite-docs-dev`.
+All `make` command automatically use this conda environment.
+
 ## Editing
 
 You can create a live server to view changes in real time by running the following command.
