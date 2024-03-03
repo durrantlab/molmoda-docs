@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "biotite-docs"
-version = "0.0.0"
+version = "0.0.0.post3"
 description = "Documentation for Biotite documentation"
 authors = [
     "Jacob Durrant",

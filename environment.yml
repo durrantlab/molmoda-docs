@@ -1,4 +1,4 @@
-name: omics-bc-dev
+name: biotite-docs-dev
 channels:
   - conda-forge
   - defaults
