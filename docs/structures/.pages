@@ -1,4 +1,3 @@
 nav:
-  - Handling structures: index.md
-  - proteins
-  - small
+  - Structures: index.md
+  - loading
