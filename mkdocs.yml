@@ -5,7 +5,7 @@ site_author: Durrant Lab
 
 repo_name: durrantlab/biotite-suite
 repo_url: https://github.com/durrantlab/biotite-docs
-copyright: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> by Durrant Lab
+copyright: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> by Durrant Lab
 
 # https://squidfunk.github.io/mkdocs-material/
 theme:

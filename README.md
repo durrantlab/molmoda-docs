@@ -45,4 +45,4 @@ git push --follow-tags
 
 ## License
 
-All data, information, documentation, and associated content provided within this project are released under the [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en) as specified in [`LICENSE`](https://github.com/durrantlab/biotite-docs).
+All data, information, documentation, and associated content provided within this project are released under the [CC BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/deed.en) as specified in [`LICENSE`](https://github.com/durrantlab/biotite-docs).
