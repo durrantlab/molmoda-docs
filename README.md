@@ -1,6 +1,6 @@
-# Biotite Documentation
+# MolModa Documentation
 
-This repository contains the documentation for Biotite, developed by the Durrant Lab at the University of Pittsburgh.
+This repository contains the documentation for MolModa, developed by the Durrant Lab at the University of Pittsburgh.
 
 ## Environment
 
@@ -12,7 +12,7 @@ Run
 make environment
 ```
 
-to create a conda environment called `biotite-docs-dev`.
+to create a conda environment called `molmoda-docs-dev`.
 All `make` command automatically use this conda environment.
 
 ## Editing
@@ -58,4 +58,4 @@ git push --follow-tags
 
 ## License
 
-All data, information, documentation, and associated content provided within this project are released under the [CC BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/deed.en) as specified in [`LICENSE`](https://github.com/durrantlab/biotite-docs).
+All data, information, documentation, and associated content provided within this project are released under the [CC BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/deed.en) as specified in [`LICENSE`](https://github.com/durrantlab/molmoda-docs).

@@ -1,10 +1,10 @@
 docs_dir: docs
 
-site_name: Biotite Documentation
+site_name: MolModa Documentation
 site_author: Durrant Lab
 
-repo_name: durrantlab/biotite-suite
-repo_url: https://github.com/durrantlab/biotite-docs
+repo_name: durrantlab/molmoda-suite
+repo_url: https://github.com/durrantlab/molmoda-docs
 copyright: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> by Durrant Lab
 
 # https://squidfunk.github.io/mkdocs-material/
@@ -68,7 +68,7 @@ extra:
   generator: false
   analytics:
     provider: plausible
-    domain: biotite-docs
+    domain: molmoda-docs
 
 extra_css:
   - css/base.css

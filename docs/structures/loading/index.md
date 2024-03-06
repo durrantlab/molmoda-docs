@@ -1,8 +1,8 @@
 # Loading structures
 
-This documentation section shows how to load structural data into Biotite.
+This documentation section shows how to load structural data into MolModa.
 Proper preparation and loading of structural data are crucial for computational accuracy.
-Biotite supports loading two types of structures:
+MolModa supports loading two types of structures:
 
 -   [Proteins](./proteins/)
 -   [Small molecules](./small/)

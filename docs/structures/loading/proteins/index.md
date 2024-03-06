@@ -1,6 +1,6 @@
 # Proteins
 
-The `File` menu, shown below, contains several ways to import or load structures into Biotite.
+The `File` menu, shown below, contains several ways to import or load structures into MolModa.
 
 <figure markdown>
 ![](/img/menus/file-structures.png){ alight=left height=300 }
@@ -20,7 +20,7 @@ For example, we can load in [1XDN](https://www.rcsb.org/structure/1XDN), a RNA e
 ![](/img/structures/pdb-1xdn-initial.png){ alight=left width=800 }
 </figure>
 
-Biotite will automatically load all chains; [8GTT](https://www.rcsb.org/structure/8GTT) for example, will have all seven chains shown by expanding `8GTT` in the [navigator][navigator].
+MolModa will automatically load all chains; [8GTT](https://www.rcsb.org/structure/8GTT) for example, will have all seven chains shown by expanding `8GTT` in the [navigator][navigator].
 
 <figure markdown>
 ![](/img/structures/pdb-8gtt-initial.png){ alight=left width=800 }

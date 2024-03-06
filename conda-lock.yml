@@ -2535,39 +2535,39 @@ package:
   category: main
   optional: false
 - name: pkginfo
-  version: 1.9.6
+  version: 1.10.0
   manager: conda
   platform: linux-64
   dependencies:
-    python: '>=3.6'
-  url: https://conda.anaconda.org/conda-forge/noarch/pkginfo-1.9.6-pyhd8ed1ab_0.conda
+    python: '>=3.7'
+  url: https://conda.anaconda.org/conda-forge/noarch/pkginfo-1.10.0-pyhd8ed1ab_0.conda
   hash:
-    md5: be1e9f1c65a1ed0f2ae9352fec99db64
-    sha256: 7ea5a5af62a15376d9f4f9f3c134874d0b0710f39be719e849b7fa9ca8870502
+    md5: 8c6a4a704308f5d91f3a974a72db1096
+    sha256: 3e833f907039646e34d23203cd5c9cc487a451d955d8c8d6581e18a8ccef4cee
   category: main
   optional: false
 - name: pkginfo
-  version: 1.9.6
+  version: 1.10.0
   manager: conda
   platform: osx-64
   dependencies:
-    python: '>=3.6'
-  url: https://conda.anaconda.org/conda-forge/noarch/pkginfo-1.9.6-pyhd8ed1ab_0.conda
+    python: '>=3.7'
+  url: https://conda.anaconda.org/conda-forge/noarch/pkginfo-1.10.0-pyhd8ed1ab_0.conda
   hash:
-    md5: be1e9f1c65a1ed0f2ae9352fec99db64
-    sha256: 7ea5a5af62a15376d9f4f9f3c134874d0b0710f39be719e849b7fa9ca8870502
+    md5: 8c6a4a704308f5d91f3a974a72db1096
+    sha256: 3e833f907039646e34d23203cd5c9cc487a451d955d8c8d6581e18a8ccef4cee
   category: main
   optional: false
 - name: pkginfo
-  version: 1.9.6
+  version: 1.10.0
   manager: conda
   platform: win-64
   dependencies:
-    python: '>=3.6'
-  url: https://conda.anaconda.org/conda-forge/noarch/pkginfo-1.9.6-pyhd8ed1ab_0.conda
+    python: '>=3.7'
+  url: https://conda.anaconda.org/conda-forge/noarch/pkginfo-1.10.0-pyhd8ed1ab_0.conda
   hash:
-    md5: be1e9f1c65a1ed0f2ae9352fec99db64
-    sha256: 7ea5a5af62a15376d9f4f9f3c134874d0b0710f39be719e849b7fa9ca8870502
+    md5: 8c6a4a704308f5d91f3a974a72db1096
+    sha256: 3e833f907039646e34d23203cd5c9cc487a451d955d8c8d6581e18a8ccef4cee
   category: main
   optional: false
 - name: platformdirs
@@ -2607,7 +2607,7 @@ package:
   category: main
   optional: false
 - name: poetry
-  version: 1.8.1
+  version: 1.8.2
   manager: conda
   platform: linux-64
   dependencies:
@@ -2637,14 +2637,14 @@ package:
     tomlkit: '>=0.11.4,<1.0.0'
     trove-classifiers: '>=2022.5.19'
     virtualenv: '>=20.23.0,<21.0.0'
-  url: https://conda.anaconda.org/conda-forge/noarch/poetry-1.8.1-linux_pyha804496_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/poetry-1.8.2-linux_pyha804496_0.conda
   hash:
-    md5: fb44de8bb3ec5bf8165f0e3e60c9880f
-    sha256: 1d1121c7c23ba839c1efe9d35faf9a93b868e8777f59bbb75b86f8fe5a4805fb
+    md5: 7ced2e0d172efd9b108b1fed18e4bea6
+    sha256: 6012430d2dc1af9ed821496f05b81bf4ca679eba74c91faf9d16711e86b04c01
   category: main
   optional: false
 - name: poetry
-  version: 1.8.1
+  version: 1.8.2
   manager: conda
   platform: osx-64
   dependencies:
@@ -2675,14 +2675,14 @@ package:
     trove-classifiers: '>=2022.5.19'
     virtualenv: '>=20.23.0,<21.0.0'
     xattr: '>=1.0.0,<2.0.0'
-  url: https://conda.anaconda.org/conda-forge/noarch/poetry-1.8.1-osx_pyh534df25_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/poetry-1.8.2-osx_pyh534df25_0.conda
   hash:
-    md5: a82a015e047d2dbf687e18df58f1f72a
-    sha256: 34bb94f1babdf5289b82b3d6a59f79cd1a79f625289ff2cc1b0f28906cf58f61
+    md5: 05c70f609ab7963a9301afc11e942519
+    sha256: e7c857a05636e6207bbb0cf5bf12d139d9d6804d3a3a5a1a2f08131d792c4a56
   category: main
   optional: false
 - name: poetry
-  version: 1.8.1
+  version: 1.8.2
   manager: conda
   platform: win-64
   dependencies:
@@ -2712,10 +2712,10 @@ package:
     tomlkit: '>=0.11.4,<1.0.0'
     trove-classifiers: '>=2022.5.19'
     virtualenv: '>=20.23.0,<21.0.0'
-  url: https://conda.anaconda.org/conda-forge/noarch/poetry-1.8.1-win_pyh7428d3b_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/poetry-1.8.2-win_pyh7428d3b_0.conda
   hash:
-    md5: 5cf0ba66bbbf2ab8b4493fc0e0195493
-    sha256: c22a155d6ec4c4d46794b6ef77c40f31cfea7838a44e2bae3e542f342d70873b
+    md5: 26779c1e64baa95a275a6bc85e53a342
+    sha256: 3fffafdcc3f6db9d63bbc70b4f910b3c0437775afa2d6a08f4bc9244ca51f80b
   category: main
   optional: false
 - name: poetry-core
@@ -4029,39 +4029,39 @@ package:
   category: main
   optional: false
 - name: trove-classifiers
-  version: 2024.2.23
+  version: 2024.3.3
   manager: conda
   platform: linux-64
   dependencies:
     python: '>=3.7'
-  url: https://conda.anaconda.org/conda-forge/noarch/trove-classifiers-2024.2.23-pyhd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/trove-classifiers-2024.3.3-pyhd8ed1ab_0.conda
   hash:
-    md5: da7095027cb05a436b4bd15e5f804a26
-    sha256: 396c9c0cb125ad04179d90d8bb51b19efd8ac2798e1d2eb1005f46cad1d63995
+    md5: 8ea774e1b108dc9a1a8358a483b4cc6d
+    sha256: 4eb751b0a79f28e62657b6e1c751a0af78b78ea858d223c3b7b03ea11a89a144
   category: main
   optional: false
 - name: trove-classifiers
-  version: 2024.2.23
+  version: 2024.3.3
   manager: conda
   platform: osx-64
   dependencies:
     python: '>=3.7'
-  url: https://conda.anaconda.org/conda-forge/noarch/trove-classifiers-2024.2.23-pyhd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/trove-classifiers-2024.3.3-pyhd8ed1ab_0.conda
   hash:
-    md5: da7095027cb05a436b4bd15e5f804a26
-    sha256: 396c9c0cb125ad04179d90d8bb51b19efd8ac2798e1d2eb1005f46cad1d63995
+    md5: 8ea774e1b108dc9a1a8358a483b4cc6d
+    sha256: 4eb751b0a79f28e62657b6e1c751a0af78b78ea858d223c3b7b03ea11a89a144
   category: main
   optional: false
 - name: trove-classifiers
-  version: 2024.2.23
+  version: 2024.3.3
   manager: conda
   platform: win-64
   dependencies:
     python: '>=3.7'
-  url: https://conda.anaconda.org/conda-forge/noarch/trove-classifiers-2024.2.23-pyhd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/trove-classifiers-2024.3.3-pyhd8ed1ab_0.conda
   hash:
-    md5: da7095027cb05a436b4bd15e5f804a26
-    sha256: 396c9c0cb125ad04179d90d8bb51b19efd8ac2798e1d2eb1005f46cad1d63995
+    md5: 8ea774e1b108dc9a1a8358a483b4cc6d
+    sha256: 4eb751b0a79f28e62657b6e1c751a0af78b78ea858d223c3b7b03ea11a89a144
   category: main
   optional: false
 - name: typing-extensions

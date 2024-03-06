@@ -1,7 +1,7 @@
 SHELL := /usr/bin/env bash
 PYTHON_VERSION := 3.12.1
 PYTHON_VERSION_CONDENSED := 312
-PACKAGE_NAME := biotite-docs
+PACKAGE_NAME := molmoda-docs
 CONDA_NAME := $(PACKAGE_NAME)-dev
 CONDA := conda run -n $(CONDA_NAME)
 CONDA_LOCK_OPTIONS := -p linux-64 -p osx-64 -p win-64 --channel conda-forge
