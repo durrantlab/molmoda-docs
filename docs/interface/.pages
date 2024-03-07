@@ -1,3 +1,7 @@
 nav:
   - Interface: index.md
+  - main
   - navigator
+  - styles
+  - info
+  - log
