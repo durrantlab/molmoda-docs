@@ -1,4 +1,4 @@
-# Small molecules
+# Compounds
 
 TODO:
 
