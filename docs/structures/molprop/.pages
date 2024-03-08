@@ -2,8 +2,7 @@ nav:
     - Molecular properties: index.md
     - logp
     - weight
-    - hba
-    - hbd
+    - hb
     - mr
     - csp3
     - surf
