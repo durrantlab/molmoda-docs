@@ -1,7 +1,6 @@
-# TD01. Epidermal growth factor receptor inhibitors
+# TD001. Epidermal growth factor receptor inhibitors
 
 TODO:
-
 
 !!! tip
 
