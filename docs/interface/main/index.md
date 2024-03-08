@@ -15,11 +15,27 @@ Functionality integrated with the navigator facilitates the selective display an
 
 ## Jobs
 
-Within the jobs section, users can track the progress of computational tasks in real-time.
+Within the jobs section, users can track the progress of tasks in real-time.
 This includes ongoing jobs like molecular docking, their completion status, and runtime.
-A job history feature is also available, providing a record of past computational tasks for analysis and review.
+A job history feature is also available, providing a record of past jobs for analysis and review.
+
+<figure markdown>
+![](/img/docking/td001/dock/docking-running.png){ alight=left height=300 }
+</figure>
 
 ## Data
 
-The data section organizes critical information from computational calculations, including details on binding pockets, compound properties, docking scores, and poses.
+The data section organizes critical information from calculations including details on binding pockets, compound properties, docking scores, and poses.
 It features sortable and filterable tables, making it easier for users to access and analyze their data efficiently, supporting informed decision-making in their projects.
+
+=== "Pocket"
+
+    <figure markdown>
+    ![](/img/docking/td001/pockets/pocket-properties.png){ alight=left height=300 }
+    </figure>
+
+=== "Docking"
+
+    <figure markdown>
+    ![](/img/docking/td001/dock/docking-scores.png){ alight=left height=300 }
+    </figure>

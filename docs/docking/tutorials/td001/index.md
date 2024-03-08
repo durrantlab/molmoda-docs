@@ -24,7 +24,7 @@ At the end of this tutorial, you should be able to
 [3W32](https://www.rcsb.org/structure/3w32)
 
 <figure markdown>
-![](/img/docking/egfr/load-pdb.png){ alight=left height=300 }
+![](/img/docking/td001/load-pdb.png){ alight=left height=300 }
 </figure>
 
 ### Remove water molecules
@@ -32,25 +32,25 @@ At the end of this tutorial, you should be able to
 === "1. Original"
 
     <figure markdown>
-    ![](/img/docking/egfr/waters/pdb-expanded-nav.png)
+    ![](/img/docking/td001/waters/pdb-expanded-nav.png)
     </figure>
 
 === "2a. Hide waters"
 
     <figure markdown>
-    ![](/img/docking/egfr/waters/pdb-hide-waters.png)
+    ![](/img/docking/td001/waters/pdb-hide-waters.png)
     </figure>
 
 === "2b. Delete waters"
 
     <figure markdown>
-    ![](/img/docking/egfr/waters/pdb-delete-waters.png)
+    ![](/img/docking/td001/waters/pdb-delete-waters.png)
     </figure>
 
 === "3. Result"
 
     <figure markdown>
-    ![](/img/docking/egfr/waters/pdb-remove-waters.png)
+    ![](/img/docking/td001/waters/pdb-remove-waters.png)
     </figure>
 
 ### Protonation
@@ -60,25 +60,25 @@ TODO:
 === "1. Original"
 
     <figure markdown>
-    ![](/img/docking/egfr/prot/protein-before-prot.png)
+    ![](/img/docking/td001/prot/protein-before-prot.png)
     </figure>
 
 === "2. Menu"
 
     <figure markdown>
-    ![](/img/docking/egfr/prot/pdb-prot-menu.png)
+    ![](/img/docking/td001/prot/pdb-prot-menu.png)
     </figure>
 
 === "3. Popup"
 
     <figure markdown>
-    ![](/img/docking/egfr/prot/pdb-prot-popup.png)
+    ![](/img/docking/td001/prot/pdb-prot-popup.png)
     </figure>
 
 === "4. Protonated"
 
     <figure markdown>
-    ![](/img/docking/egfr/prot/protein-after-prot.png)
+    ![](/img/docking/td001/prot/protein-after-prot.png)
     </figure>
 
 TODO: delete deprotonated protein
@@ -90,13 +90,13 @@ TODO:
 === "1. Detect pockets"
 
     <figure markdown>
-    ![](/img/docking/egfr/pockets/pocket-detection.png)
+    ![](/img/docking/td001/pockets/pocket-detection.png)
     </figure>
 
 === "2. Found pockets"
 
     <figure markdown>
-    ![](/img/docking/egfr/pockets/all-pockets.png)
+    ![](/img/docking/td001/pockets/all-pockets.png)
     </figure>
 
 === "3. Pocket properties"
@@ -104,25 +104,25 @@ TODO:
     You may download the [Pocket properties CSV file](./fpocketweb-properties.csv){:download="fpocketweb-properties.csv"} as well.
 
     <figure markdown>
-    ![](/img/docking/egfr/pockets/pocket-properties.png)
+    ![](/img/docking/td001/pockets/pocket-properties.png)
     </figure>
 
 === "4. Selected pocket"
 
     <figure markdown>
-    ![](/img/docking/egfr/pockets/pocket-select.png)
+    ![](/img/docking/td001/pockets/pocket-select.png)
     </figure>
 
 === "5. Modified pocket"
 
     <figure markdown>
-    ![](/img/docking/egfr/pockets/modified-pocket.png)
+    ![](/img/docking/td001/pockets/modified-pocket.png)
     </figure>
 
 === "6. Remove compounds"
 
     <figure markdown>
-    ![](/img/docking/egfr/pockets/pocket-no-molecules.png)
+    ![](/img/docking/td001/pockets/pocket-no-molecules.png)
     </figure>
 
 ## Compounds
@@ -132,19 +132,19 @@ TODO:
 === "1. Open molecules"
 
     <figure markdown>
-    ![](/img/docking/egfr/molecules/open-molecules.png)
+    ![](/img/docking/td001/molecules/open-molecules.png)
     </figure>
 
 === "2. Loaded molecules"
 
     <figure markdown>
-    ![](/img/docking/egfr/molecules/loaded-molecules.png)
+    ![](/img/docking/td001/molecules/loaded-molecules.png)
     </figure>
 
 === "3. Example molecule"
 
     <figure markdown>
-    ![](/img/docking/egfr/molecules/example-molecule.png)
+    ![](/img/docking/td001/molecules/example-molecule.png)
     </figure>
 
 ## Docking
@@ -152,37 +152,37 @@ TODO:
 === "1. Menu"
 
     <figure markdown>
-    ![](/img/docking/egfr/dock/docking-menu.png)
+    ![](/img/docking/td001/dock/docking-menu.png)
     </figure>
 
 === "2. Docking options"
 
     <figure markdown>
-    ![](/img/docking/egfr/dock/docking-options.png)
+    ![](/img/docking/td001/dock/docking-options.png)
     </figure>
 
 === "3. Running"
 
     <figure markdown>
-    ![](/img/docking/egfr/dock/docking-running.png)
+    ![](/img/docking/td001/dock/docking-running.png)
     </figure>
 
 === "3. Docked poses"
 
     <figure markdown>
-    ![](/img/docking/egfr/dock/docked-poses.png)
+    ![](/img/docking/td001/dock/docked-poses.png)
     </figure>
 
 === "4. Scores"
 
     <figure markdown>
-    ![](/img/docking/egfr/dock/docking-scores.png)
+    ![](/img/docking/td001/dock/docking-scores.png)
     </figure>
 
 === "5. Top hit"
 
     <figure markdown>
-    ![](/img/docking/egfr/dock/top-hit.png)
+    ![](/img/docking/td001/dock/top-hit.png)
     </figure>
 
 TODO:
@@ -190,17 +190,17 @@ TODO:
 === "1. Pose refinement"
 
     <figure markdown>
-    ![](/img/docking/egfr/dock/refined-dock.png)
+    ![](/img/docking/td001/dock/refined-dock.png)
     </figure>
 
 === "2. Scores"
 
     <figure markdown>
-    ![](/img/docking/egfr/dock/refined-scores.png)
+    ![](/img/docking/td001/dock/refined-scores.png)
     </figure>
 
 === "2. Top poses"
 
     <figure markdown>
-    ![](/img/docking/egfr/dock/pose-comparison.png)
+    ![](/img/docking/td001/dock/pose-comparison.png)
     </figure>
