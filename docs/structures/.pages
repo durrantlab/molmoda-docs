@@ -1,3 +1,4 @@
 nav:
   - Structures: index.md
-  - loading
+  - Loading: loading
+  - Molecular properties: molprop

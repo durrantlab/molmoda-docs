@@ -1,6 +1,7 @@
 # Information
 
-TODO:
+The Information section of our application is a dedicated space designed to offer users immediate access to critical molecular property information.
+This feature enriches the user's understanding of molecular structures through a concise and informative display, encompassing a range of data points, including 2D representations, SMILES strings, and computed molecular properties.
 
 ## Molecular properties
 
@@ -10,7 +11,16 @@ TODO:
 
 ### logP
 
-Wildman-Crippen LogP. See JCICS 39 868-873 (1999)
+The octanol−water partition coefficient (logP) for molecules is computed using the method described by [Wildman and Crippen](https://doi.org/10.1021/ci990307l).
+The approach relies on classifying atoms within a molecule into one of 68 predefined atom types, each associated with a specific contribution to the molecule's logP value.
+Atoms are classified based on their immediate chemical environment, considering factors such as the type of neighboring atoms, their aromaticity, and their bonding. This classification reduces ambiguity and ensures a consistent assignment of atom types across different molecules.
+
+The logP of a molecule is calculated as the sum of the contributions of its constituent atoms, thus allowing for the estimation of a molecule's lipophilicity.
+The logP value of a molecule is calculated using
+
+\[ P_{\text{calc}} = \sum_{i} n_{i} a_{i} \]
+
+where \(P_{\text{calc}}\) is the calculated logP value, \(n_{i}\) is the number of atoms of type \(i\) present in the molecule, and \(a_{i}\) is the contribution to logP for atom type \(i\).
 
 ### Weight
 

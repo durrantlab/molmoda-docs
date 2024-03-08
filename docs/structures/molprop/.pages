@@ -1,0 +1,11 @@
+nav:
+    - Molecular properties: index.md
+    - logp
+    - weight
+    - hba
+    - hbd
+    - mr
+    - csp3
+    - surf
+    - tpsa
+    - violations
