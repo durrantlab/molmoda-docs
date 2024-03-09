@@ -10,5 +10,5 @@ There are five main windows:
 -   [Log](./log/).
 
 <figure markdown>
-![](/img/interface/home.png){ alight=left height=300 }
+![](../img/interface/home.png){ alight=left height=300 }
 </figure>

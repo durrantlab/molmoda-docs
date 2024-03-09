@@ -15,7 +15,7 @@ Its interface is organized to offer a clear view of the project's molecular comp
     This feature allows for a clutter-free visualization space in the viewer, focusing only on elements of interest at any given time.
 
     <figure markdown>
-    ![](/img/interface/navigator/hide-show.png){ alight=left height=300 }
+    ![](../../img/interface/navigator/hide-show.png){ alight=left height=300 }
     </figure>
 
 === "Focus"
@@ -24,7 +24,7 @@ Its interface is organized to offer a clear view of the project's molecular comp
     It's particularly useful for examining detailed interactions or configurations of molecular structures, ensuring the selected entity is prominently displayed.
 
     <figure markdown>
-    ![](/img/interface/navigator/focus.png){ alight=left height=300 }
+    ![](../../img/interface/navigator/focus.png){ alight=left height=300 }
     </figure>
 
 === "Delete"
@@ -33,7 +33,7 @@ Its interface is organized to offer a clear view of the project's molecular comp
     This action is irreversible and should be used to eliminate unneeded or erroneously loaded components, helping maintain the project's integrity and focus.
 
     <figure markdown>
-    ![](/img/interface/navigator/delete.png){ alight=left height=300 }
+    ![](../../img/interface/navigator/delete.png){ alight=left height=300 }
     </figure>
 
 ## Utilization

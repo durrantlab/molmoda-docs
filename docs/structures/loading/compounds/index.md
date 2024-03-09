@@ -3,7 +3,7 @@
 TODO:
 
 <figure markdown>
-![](/img/menus/file-structures.png){ alight=left height=300 }
+![](../../../img/menus/file-structures.png){ alight=left height=300 }
 </figure>
 
 ## PubChem
@@ -11,23 +11,23 @@ TODO:
 === "Popup"
 
     <figure markdown>
-    ![](/img/structures/load-pubchem.png){ alight=left height=300 }
+    ![](../../../img/structures/load-pubchem.png){ alight=left height=300 }
     </figure>
 
 === "Enter molecule name"
 
     <figure markdown>
-    ![](/img/structures/lapatinib/lapatinib-initial.png){ alight=left height=300 }
+    ![](../../../img/structures/lapatinib/lapatinib-initial.png){ alight=left height=300 }
     </figure>
 
 === "Auto CID lookup"
 
     <figure markdown>
-    ![](/img/structures/lapatinib/lapatinib-found.png){ alight=left height=300 }
+    ![](../../../img/structures/lapatinib/lapatinib-found.png){ alight=left height=300 }
     </figure>
 
 <figure markdown>
-![](/img/structures/lapatinib/lapatinib-loaded.png){ alight=left height=300 }
+![](../../../img/structures/lapatinib/lapatinib-loaded.png){ alight=left height=300 }
 </figure>
 
 ## Text
@@ -35,7 +35,7 @@ TODO:
 TODO: PDB, mol2, sdf, smiles
 
 <figure markdown>
-![](/img/structures/load-string.png){ alight=left height=300 }
+![](../../../img/structures/load-string.png){ alight=left height=300 }
 </figure>
 
 === "smiles"

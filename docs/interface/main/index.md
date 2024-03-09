@@ -10,7 +10,7 @@ Through the styles window, it offers a range of customizable visual representati
 Functionality integrated with the navigator facilitates the selective display and updating of molecule visuals within the viewer, enhancing the interactive experience.
 
 <figure markdown>
-![](/img/interface/lapatinib-hover-atom.png){ alight=left height=300 }
+![](../../img/interface/lapatinib-hover-atom.png){ alight=left height=300 }
 </figure>
 
 ## Jobs
@@ -20,7 +20,7 @@ This includes ongoing jobs like molecular docking, their completion status, and 
 A job history feature is also available, providing a record of past jobs for analysis and review.
 
 <figure markdown>
-![](/img/docking/td001/dock/docking-running.png){ alight=left height=300 }
+![](../../img/docking/td001/dock/docking-running.png){ alight=left height=300 }
 </figure>
 
 ## Data
@@ -31,11 +31,11 @@ It features sortable and filterable tables, making it easier for users to access
 === "Pocket"
 
     <figure markdown>
-    ![](/img/docking/td001/pockets/pocket-properties.png){ alight=left height=300 }
+    ![](../../img/docking/td001/pockets/pocket-properties.png){ alight=left height=300 }
     </figure>
 
 === "Docking"
 
     <figure markdown>
-    ![](/img/docking/td001/dock/docking-scores.png){ alight=left height=300 }
+    ![](../../img/docking/td001/dock/docking-scores.png){ alight=left height=300 }
     </figure>
