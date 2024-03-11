@@ -12,4 +12,4 @@ With support for various file formats and integration with key databases, MolMod
 -   **Accessibility:** No installations or downloads required&mdash;get started directly in your web browser.
 -   **Security:** Full data privacy with all computations performed locally, ensuring intellectual property protection.
 -   **User-Friendly:** An intuitive graphical user interface simplifies the molecular docking workflow for experts and non-experts alike.
--   **Open Source:** Contributing to the scientific community with source code available on GitHub under the GNU General Public License v2.0.
+-   **Open Source:** Contributing to the scientific community with [source code available on GitHub](https://github.com/durrantlab/molmoda) under the GNU General Public License v2.0.

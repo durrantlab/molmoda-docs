@@ -1,9 +1,5 @@
 # Topological polar surface area
 
-TODO: Topological polar surface area. See J Med Chem 43 3714-3717 (2000)
-
-## Methodology
-
 MolModa computes the polar surface area using the method described in [Ertl, Rhote, and Selzer](https://doi.org/10.1021/jm000942e).
 
 The process of calculating the Topological Polar Surface Area (TPSA) is streamlined into a series of steps, beginning with the identification of polar fragments within a molecule.

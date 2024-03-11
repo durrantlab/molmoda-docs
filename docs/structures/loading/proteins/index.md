@@ -1,6 +1,6 @@
 # Proteins
 
-The `File` menu, shown below, contains several ways to import or load structures into MolModa.
+The `File` menu, shown below, contains several ways to import or load biomolecular into MolModa.
 
 <figure markdown>
 ![](../../../img/menus/file-structures.png){ alight=left height=300 }

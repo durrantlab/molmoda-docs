@@ -37,5 +37,5 @@ It features sortable and filterable tables, making it easier for users to access
 === "Docking"
 
     <figure markdown>
-    ![](../../img/docking/td001/dock/docking-scores.png){ alight=left height=300 }
+    ![](../../img/docking/td001/dock/docking-scores-exhaustive.8.png){ alight=left height=300 }
     </figure>
