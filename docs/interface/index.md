@@ -7,7 +7,7 @@ There are five main windows:
 -   [Navigator](./navigator/),
 -   [Styles](./styles/),
 -   [Information](./info/),
--   [Log](./log/).
+<!-- -   [Log](./log/). -->
 
 <figure markdown>
 ![](../img/interface/home.png){ alight=left height=300 }
