@@ -5,4 +5,4 @@ Proper preparation and loading of structural data are crucial for computational 
 MolModa supports loading two types of structures:
 
 -   [Proteins](./proteins/)
--   [Compounds](./small/)
+-   [Compounds](./compounds/)
