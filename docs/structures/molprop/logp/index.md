@@ -145,6 +145,15 @@ where
 -   \(n_{i}\) is the number of atoms of type \(i\) present in the molecule, and
 -   \(\alpha_{i}\) is the contribution to logP for atom type \(i\).
 
+!!! warning
+
+    Please be aware that the logP value of a molecule is dependent on its protonation state.
+    When you predict the logP value for a molecule and subsequently change its protonation state, the logP value will also change accordingly.
+    This is evident in the Atom Classification table above, where there are specific contributions for hydrogens.
+
+    It is essential to consider the protonation state of your molecule when interpreting and comparing logP values. The same molecule can have different logP values depending on its protonation state under specific pH conditions.
+    Remember this when using predicted logP values to make decisions or comparisons, especially if you have modified your molecule's protonation state.
+
 <!-- REFERENCES -->
 
 [^wildman1999prediction]: Wildman, S. A., & Crippen, G. M. (1999). Prediction of physicochemical parameters by atomic contributions. *Journal of chemical information and computer sciences, 39*(5), 868-873. DOI: [10.1021/ci990307l](https://doi.org/10.1021/ci990307l)
