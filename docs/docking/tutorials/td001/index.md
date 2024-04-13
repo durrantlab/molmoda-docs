@@ -6,7 +6,7 @@ This MolModa tutorial demonstrates how to dock compounds into the EGFR structure
 
 !!! tip
 
-    You may download the final [MolModa file](./td001.molmoda){:download="td001.molmoda"} and see the results of this tutorial.
+    You can open the final [`.molmoda` file](https://durrantlab.pitt.edu/molmoda/?open=https://durrantlab.pitt.edu/molmoda/docs/docking/tutorials/td001/td001.molmoda) and see the results of this tutorial.
 
 ## Learning objectives
 
@@ -44,7 +44,7 @@ This simplification can lead to a more focused and efficient exploration of the 
 
 Furthermore, removing water molecules allows for specialized scoring functions and algorithms designed for 'dry' docking scenarios, which may not account for the dynamic and complex nature of water-protein and water-ligand interactions.
 However, while removing water molecules is a common practice, the decision to do so should be informed by the specific objectives of the simulation and the characteristics of the protein-ligand system under study.
-In some cases, the inclusion of key water molecules, especially those known to play a critical role in the binding process or in maintaining protein structure, may be necessary for a more accurate representation of the biological system.
+In some cases, the inclusion of key water molecules, especially those that play a critical role in the binding process or in maintaining protein structure, may be necessary for a more accurate representation of the biological system.
 
 This tutorial will ignore all crystallographic water molecules from our structure.
 We can ignore the water molecules in two ways: hide or delete.
@@ -128,7 +128,7 @@ MolModa provides an automated way to protonate the protein by selecting `Protein
     ![](../../../img/docking/td001/prot/protein-after-prot.png)
     </figure>
 
-To clean up our `Navigation`, we will delete our unprotonated structure.
+We will delete our unprotonated structure to clean up our `Navigation`.
 
 ## Pockets
 
@@ -139,11 +139,11 @@ This analysis often involves a combination of computational methods and biologic
 Understanding the protein's function and the biological context within which it operates is critical to this selection process.
 Knowledge of the protein's active sites, obtained from literature reviews, experimental data, and databases of protein structures, provides invaluable guidance.
 For proteins with known ligands, these active sites serve as primary targets for docking.
-A more exploratory approach is required in cases where the binding site is unknown or the protein may interact with multiple ligands.
+A more exploratory approach is required in cases where the binding site is unknown, or the protein may interact with multiple ligands.
 Here, algorithms that predict potential binding sites based on geometric, energetic, and chemical criteria are beneficial.
 
 Selecting the right pocket for docking also involves evaluating the compatibility of the pocket's characteristics with the ligand's physicochemical properties.
-The pocket's shape, size, and charge distribution should complement those of the ligand to facilitate a stable and biologically relevant interaction. Additionally, the pocket's accessibility, flexibility, and the presence of critical amino acids that can form key interactions with the ligand are considered to ensure that the selected site can realistically accommodate the ligand under physiological conditions.
+The pocket's shape, size, and charge distribution should complement the ligands to facilitate a stable and biologically relevant interaction. Additionally, the pocket's accessibility, flexibility, and the presence of critical amino acids that can form key interactions with the ligand are considered to ensure that the selected site can realistically accommodate the ligand under physiological conditions.
 
 Once a potential binding pocket is identified, it may be refined and optimized through further computational analysis to enhance the accuracy of the docking simulation.
 This refinement can include adjusting the pocket's dimensions, optimizing the alignment of pocket residues, and incorporating flexibility into the pocket structure to allow for a more dynamic interaction with the ligand.
@@ -170,7 +170,7 @@ For this tutorial, we will use the pocket containing the co-crystallized ligand.
 === "3. Pocket properties"
 
     If you do not have a ligand you are trying to capture with your pocket, you can see pocket properties under the `Data` tab of the main window.
-    The higher the score and druggability, the more likely the pocket is to be an effective binding site for a ligand.
+    The higher the score and druggability, the more likely the pocket will be an effective ligand binding site.
 
     <figure markdown>
     ![](../../../img/docking/td001/pockets/pocket-properties.png)
@@ -208,7 +208,7 @@ For this tutorial, we will use the pocket containing the co-crystallized ligand.
 
 ## Compounds
 
-We first need to load the compounds of interest to conduct the docking simulations.
+We first must load the compounds of interest to conduct the docking simulations.
 The compounds we'll be working with can be imported from a SMILES file, which encodes each compound's structure in text format.
 This file can be downloaded [here](./td001.smiles){:download="td001.smiles"}. The steps below guide you through loading these compounds into MolModa for docking.
 
@@ -275,7 +275,20 @@ MolModa facilitates this process through an automated protonation tool.
 ## Docking
 
 With the protein pocket selected and compounds prepared, we move on to the docking stage.
-Docking allows us to predict how these compounds fit into the target site on the protein, providing insights into their potential effectiveness as inhibitors.
+Docking is a crucial step in the drug discovery process, as it allows us to predict how the prepared compounds interact with the target protein and assess their potential as inhibitors.
+
+The docking process involves several key aspects:
+
+-   Docking algorithms generate multiple possible orientations and conformations (poses) of each compound within the selected protein pocket.
+    These poses represent potential binding modes of the compound to the target site.
+Each generated pose is evaluated and assigned a score based on the predicted strength and favorability of the compound-protein interaction.
+    Scoring functions consider shape complementarity, hydrogen bonding, hydrophobic interactions, and electrostatic forces.
+    The poses are then ranked according to their scores, with lower scores indicating more favorable binding.
+-   The top-ranked poses for each compound are visually inspected to assess their plausibility and interactions with key residues in the binding pocket.
+    This analysis helps to identify the most promising compounds and provides insights into the molecular basis of their potential inhibitory activity.
+
+The docking results provide valuable information for guiding the selection and prioritization of compounds for further experimental testing.
+Compounds with high-scoring poses that exhibit favorable interactions with the target protein are considered promising candidates for potential inhibitors.
 
 === "1. Menu"
 
@@ -303,6 +316,14 @@ Docking allows us to predict how these compounds fit into the target site on the
     <figure markdown>
     ![](../../../img/docking/td001/dock/docking-running.png)
     </figure>
+
+However, it's important to note that docking is a computational prediction with limitations.
+The accuracy of docking results depends on factors such as the protein structure's quality, the binding site's flexibility, and the scoring function's ability to capture the relevant interactions.
+Therefore, docking results should be interpreted cautiously and validated through experimental assays to confirm the predicted binding and inhibitory activity.
+
+Despite its limitations, docking is a powerful tool in the early stages of drug discovery.
+It allows researchers to virtually screen large libraries of compounds and identify those with the highest likelihood of binding to the target protein.
+This virtual screening approach saves time and resources by prioritizing compounds for experimental testing and reducing the number of compounds that need to be synthesized and assayed.
 
 ### Exhaustiveness
 
@@ -360,7 +381,7 @@ Increasing the exhaustiveness to 32 provides a more comprehensive search, potent
 
 === "2. Top hit"
 
-    The top hit at this exhaustiveness level may differ from the one at a lower level, reflecting a possibly more accurate prediction of the ligand binding.
+    The top hit at this exhaustiveness level may differ from the one at a lower level, reflecting a more accurate prediction of the ligand binding.
 
     <figure markdown>
     ![](../../../img/docking/td001/dock/top-hit-exhaustive.32.png)
@@ -368,9 +389,21 @@ Increasing the exhaustiveness to 32 provides a more comprehensive search, potent
 
 ### Pose refinement
 
-After identifying promising poses, further refinement can be performed to improve accuracy.
-This step adjusts the ligand's conformation within the pocket for a more precise fit.
-We changed the exhaustiveness to `400` to demonstrate computational tradeoffs.
+After identifying promising poses through the initial docking process, further refinement can be performed to improve the accuracy of these predicted binding modes.
+Pose refinement is a crucial step that aims to adjust the ligand's conformation and orientation within the binding pocket to achieve a more precise and energetically favorable fit.
+During the pose refinement process, the ligand's position is fine-tuned while considering the protein environment's influence.
+This involves exploring subtle rotations and translations of the ligand within the pocket and adjusting the ligand's internal torsion angles.
+The goal is to optimize the interactions between the ligand and the surrounding amino acid residues, such as hydrogen bonding, hydrophobic contacts, and electrostatic interactions.
+
+Pose refinement algorithms often employ more sophisticated scoring functions for various factors, including the protein's flexibility, solvation effects, and entropic contributions.
+These scoring functions evaluate the quality of the refined poses and guide the optimization process toward more energetically favorable and physically realistic binding modes.
+The refinement process can be computationally intensive, especially when considering multiple ligand conformations and protein flexibility.
+
+The exhaustiveness parameter in MolModa allows users to control the extent of the refinement search.
+Increasing the exhaustiveness value dedicates more computational resources to exploring a larger conformational space and potentially discovering better-refined poses.
+However, this comes at the cost of increased computational time.
+In this example, we increased the exhaustiveness to `400` to demonstrate the computational tradeoffs associated with more extensive pose refinement.
+This higher exhaustiveness value enables a more thorough exploration of the ligand's conformational space within the binding pocket, leading to potentially better-refined poses.
 
 !!! tip
 
@@ -386,7 +419,7 @@ We changed the exhaustiveness to `400` to demonstrate computational tradeoffs.
 
 === "2. Scores"
 
-    The refined docking scores provide a more accurate estimation of binding affinity after the ligand's pose is adjusted.
+    The refined docking scores provide a more accurate binding affinity estimation after the ligand's pose is adjusted.
 
     <figure markdown>
     ![](../../../img/docking/td001/dock/refined-scores.png)
@@ -394,14 +427,9 @@ We changed the exhaustiveness to `400` to demonstrate computational tradeoffs.
 
 === "3. Top poses"
 
-    The top poses, after refinement, exhibit the best fit and strongest interactions with the binding pocket, according to the refined scores.
+    According to the refined scores, the top poses exhibit the best fit and strongest interactions with the binding pocket after refinement.
     We see only some slight rotations between the two exhaustiveness parameters.
 
     <figure markdown>
     ![](../../../img/docking/td001/dock/top-poses.png)
     </figure>
-
-## Conclusions
-
-This completes the docking section of the tutorial.
-You gained practical experience in protein-ligand docking through these steps, from preparing the protein and ligands to executing the docking simulation and analyzing the results.
