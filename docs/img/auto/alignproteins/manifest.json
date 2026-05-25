@@ -1,0 +1,50 @@
+{
+  "plugin_id": "alignproteins",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This tool uses US-align to perform structural alignment. Aligned structures will be added to the project.",
+    "hotkey": null,
+    "intro": "Align multiple protein structures to a reference (template) structure.",
+    "menu_path": "Proteins/[8] Align Proteins...",
+    "plugin_id": "alignproteins",
+    "tags": [
+      "modeling"
+    ],
+    "title": "Align Proteins",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "The protein structure to which all other proteins will be aligned.",
+        "enabled": true,
+        "id": "referenceMolecule",
+        "label": "Reference (template) protein",
+        "type": "UserArgType.SelectMolecule",
+        "val": "id_z7r4h9rrn3l"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "mobileMolecules",
+        "label": "Proteins to align",
+        "type": "UserArgType.MoleculeInputParams",
+        "val": {
+          "__class__": "MoleculeInput"
+        }
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:30:21.971862+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "plugin_id": "protonatecomps",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin uses the Open Babel library to guess at proper protonation states.",
+    "hotkey": null,
+    "intro": "Protonate/deprotonate compounds per a given pH, in preparation for docking.",
+    "menu_path": "Compounds/Build/[2] Compound Protonation...",
+    "plugin_id": "protonatecomps",
+    "tags": [
+      "modeling",
+      "docking"
+    ],
+    "title": "Protonate/Deprotonate Compounds",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "makemolinputparams",
+        "type": "UserArgType.MoleculeInputParams",
+        "val": {
+          "__class__": "MoleculeInput"
+        }
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Physiological pH is 7.4.",
+        "enabled": true,
+        "id": "pH",
+        "label": "Protonation pH",
+        "max": 14,
+        "min": "UserArgType.Text",
+        "step": 0.1,
+        "type": "UserArgType.Range",
+        "val": 7.4
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Whether to regenerate 3D atomic coordinates given the new protonation state.",
+        "enabled": true,
+        "id": "gen3D",
+        "label": "Regenerate 3D coordinates",
+        "options": [
+          {
+            "description": "none: do not generate 3D coordinates",
+            "val": "none"
+          },
+          {
+            "description": "recommended: max forcefield optimization and thorough conformer search",
+            "val": "best"
+          },
+          {
+            "description": "fastest: no forcefield optimization or conformer search",
+            "val": "fastest"
+          },
+          {
+            "description": "fast: quick forcefield optimization, no conformer search",
+            "val": "fast"
+          },
+          {
+            "description": "medium: quick forcefield optimization and fast conformer search",
+            "val": "medium"
+          },
+          {
+            "description": "better: medium forcefield optimization and fast conformer search",
+            "val": "better"
+          },
+          {
+            "description": "best: max forcefield optimization and thorough conformer search",
+            "val": "best"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "none"
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:31:56.495364+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

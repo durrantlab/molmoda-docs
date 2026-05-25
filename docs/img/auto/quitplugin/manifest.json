@@ -1,0 +1,24 @@
+{
+  "plugin_id": "quitplugin",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin provides allows the user to save their work before closing the application.",
+    "hotkey": null,
+    "intro": "Quit MolModa.",
+    "menu_path": "MolModa/[9]/[9] Quit",
+    "plugin_id": "quitplugin",
+    "tags": [
+      "all"
+    ],
+    "title": "Quit",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:31:44.049115+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

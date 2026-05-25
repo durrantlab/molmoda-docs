@@ -1,0 +1,150 @@
+{
+  "plugin_id": "findsimilarproteins",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This tool also uses US-align to perform structural alignment. Aligned structures will be added to the project.",
+    "hotkey": null,
+    "intro": "Find proteins with similar sequences using the RCSB PDB sequence search.",
+    "menu_path": "Proteins/[8] Search/Find Similar Proteins...",
+    "plugin_id": "findsimilarproteins",
+    "tags": [
+      "modeling"
+    ],
+    "title": "Find Similar Proteins",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Choose whether to use proteins from the project or to provide FASTA text.",
+        "enabled": true,
+        "id": "inputType",
+        "label": "Query source",
+        "options": [
+          {
+            "description": "Use proteins from project",
+            "val": "project"
+          },
+          {
+            "description": "Use FASTA text",
+            "val": "fasta"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "project"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "protein_to_query",
+        "label": "Proteins to use as queries",
+        "type": "UserArgType.MoleculeInputParams",
+        "val": {
+          "__class__": "MoleculeInput"
+        }
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Paste one or more protein sequences in FASTA format. Each sequence should start with a '>' header line.",
+        "enabled": false,
+        "id": "fastaText",
+        "label": "FASTA sequence(s) to use as queries",
+        "placeHolder": ">sp|P01308|INS_HUMAN Insulin\nMALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALY\nLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPL\nALEGSLQKRGIVEQCCTSICSLYQLENYCN...",
+        "type": "UserArgType.TextArea",
+        "val": ""
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Maximum E-value for a match to be considered significant.",
+        "enabled": true,
+        "id": "evalue_cutoff",
+        "label": "E-value cutoff",
+        "type": "UserArgType.Number",
+        "val": 0.1
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Minimum sequence identity required for a match.",
+        "enabled": true,
+        "id": "identity_cutoff",
+        "label": "Sequence identity cutoff (%)",
+        "max": 100,
+        "min": "UserArgType.Text",
+        "step": "UserArgType.TextArea",
+        "type": "UserArgType.Range",
+        "val": "UserArgType.Text"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "The maximum number of similar proteins to retrieve for each query protein.",
+        "enabled": true,
+        "id": "max_results",
+        "label": "Maximum results per query",
+        "max": 1000,
+        "min": "UserArgType.TextArea",
+        "type": "UserArgType.Number",
+        "val": "UserArgType.Alert"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Only return proteins that contain non-polymer ligands (molecular weight \u2265 150 Da).",
+        "enabled": true,
+        "id": "has_ligands",
+        "label": "Has Ligand(s)",
+        "type": "UserArgType.Checkbox",
+        "val": false
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Download all protein structures into the project.",
+        "enabled": true,
+        "id": "downloadStructures",
+        "label": "Download structures",
+        "type": "UserArgType.Checkbox",
+        "val": true
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Align structures to their respective query proteins. For FASTA queries, aligns to the top search result.",
+        "enabled": true,
+        "id": "alignStructures",
+        "label": "Align structures",
+        "type": "UserArgType.Checkbox",
+        "val": true
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:32:11.092498+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "plugin_id": "openexampleproject",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin provides example data for exploring and testing the MolModa interface.",
+    "hotkey": null,
+    "intro": "Append example data to the current project.",
+    "menu_path": "Help/[6] Example Data/[6] Example Data...",
+    "plugin_id": "openexampleproject",
+    "tags": [
+      "all"
+    ],
+    "title": "Append Example Data",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "which_example_data",
+        "label": "Example data to append",
+        "options": [
+          {
+            "description": "1INW protein/ligand complex",
+            "val": "1INW_just_prot_lig.molmoda"
+          },
+          {
+            "description": "1INW, binding pocket identified",
+            "val": "1INW_pocket.molmoda"
+          },
+          {
+            "description": "1INW, pocket, protein protonated",
+            "val": "1INW_pocket_prot_protonated.molmoda"
+          },
+          {
+            "description": "1INW, pocket, protein protonated, PubChem ligands",
+            "val": "1INW_pocket_prot_protonated_pubchem_ligs.molmoda"
+          },
+          {
+            "description": "1INW, pocket, protein and ligands protonated",
+            "val": "1INW_pocket_prot_protonated_ligs_protonated.molmoda"
+          },
+          {
+            "description": "1INW, pocket, protein and ligands protonated, docked",
+            "val": "1INW_pocket_prot_protonated_ligs_protonated_docked.molmoda"
+          },
+          {
+            "description": "TGFR1 virtual screen (from MolModa publication)",
+            "val": "TGFR1_docked.molmoda"
+          },
+          {
+            "description": "LARP1 lead optimization (from MolModa publication)",
+            "val": "LARP1_leadopt.molmoda"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "1INW_just_prot_lig.molmoda"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "alertType": "info",
+        "enabled": true,
+        "id": "descript",
+        "type": "UserArgType.Alert",
+        "val": "Influenza neuraminidase bound to a sialic-acid analog (PDB: 1INW). All molecular components except the protein and analog have been removed."
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:30:25.265425+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

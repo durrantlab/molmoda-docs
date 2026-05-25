@@ -1,0 +1,135 @@
+{
+  "plugin_id": "pubchemfindsimilar",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin identifies PubChem-catalogued compounds that are structurally similar to compounds chosen from your project.",
+    "hotkey": null,
+    "intro": "Build a compound library of chemically similar analogs by searching the PubChem database.",
+    "menu_path": "Compounds/[8] Create Library/[2] Find Similar Compounds...",
+    "plugin_id": "pubchemfindsimilar",
+    "tags": [
+      "lead-optimization"
+    ],
+    "title": "Find Similar Compounds",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "makemolinputparams",
+        "type": "UserArgType.MoleculeInputParams",
+        "val": {
+          "__class__": "MoleculeInput"
+        }
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Choose what kinds of molecules to retrieve from PubChem. Stereochemistry (chirality and E/Z double-bond geometry) is ignored.",
+        "enabled": true,
+        "id": "searchmode",
+        "label": "PubChem compounds to retrieve",
+        "options": [
+          {
+            "description": "Similar Compounds",
+            "val": "similar"
+          },
+          {
+            "description": "Larger Compounds (Superstructures)",
+            "val": "substructure"
+          },
+          {
+            "description": "Smaller Compounds (Substructures)",
+            "val": "superstructure"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "similar"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Value between 0 and 100. A higher threshold finds more similar compounds (95 is very similar, 80 is moderately similar).",
+        "enabled": true,
+        "id": "similarity",
+        "label": "Similarity threshold",
+        "max": 100,
+        "min": "UserArgType.Text",
+        "step": "UserArgType.TextArea",
+        "type": "UserArgType.Range",
+        "val": 95
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Maximum number of compounds to retrieve from PubChem.",
+        "enabled": true,
+        "id": "maxresults",
+        "label": "Maximum results",
+        "type": "UserArgType.Number",
+        "val": 100
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Choose how to generate 3D atomic coordinates.",
+        "enabled": true,
+        "id": "gen3D",
+        "label": "Generate 3D coordinates",
+        "options": [
+          {
+            "description": "fastest: no forcefield optimization or conformer search",
+            "val": "fastest"
+          },
+          {
+            "description": "fast: quick forcefield optimization, no conformer search",
+            "val": "fast"
+          },
+          {
+            "description": "medium: quick forcefield optimization and fast conformer search",
+            "val": "medium"
+          },
+          {
+            "description": "better: medium forcefield optimization and fast conformer search",
+            "val": "better"
+          },
+          {
+            "description": "best: max forcefield optimization and thorough conformer search",
+            "val": "best"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "best"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "alertType": "warning",
+        "enabled": true,
+        "id": "warning",
+        "type": "UserArgType.Alert",
+        "val": "This process may take some time for multiple molecules. Check the Jobs panel to monitor progress."
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:32:14.808950+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

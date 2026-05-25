@@ -1,0 +1,24 @@
+{
+  "plugin_id": "viewerwindow",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin brings the 3D molecular viewer panel into focus.",
+    "hotkey": null,
+    "intro": "Switch to the Viewer panel.",
+    "menu_path": "[8] Window/Molecules/[3] Viewer",
+    "plugin_id": "viewerwindow",
+    "tags": [
+      "all"
+    ],
+    "title": "Viewer Panel",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:30:14.417066+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

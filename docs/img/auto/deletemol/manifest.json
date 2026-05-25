@@ -1,0 +1,27 @@
+{
+  "plugin_id": "deletemol",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin removes the selected items from the project.",
+    "hotkey": [
+      "backspace",
+      "delete"
+    ],
+    "intro": "Delete the selected molecule(s)?",
+    "menu_path": "Edit/Molecules/[3] Delete...",
+    "plugin_id": "deletemol",
+    "tags": [
+      "all"
+    ],
+    "title": "Delete Molecule",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:31:54.482558+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

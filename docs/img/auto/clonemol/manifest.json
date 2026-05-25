@@ -1,0 +1,39 @@
+{
+  "plugin_id": "clonemol",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin creates an identical, independent copy of the selected molecule(s) within the current project. When multiple molecules are selected, they are cloned together under a single new top-level molecule, preserving their organization (Protein, Compounds, Metals, etc.).",
+    "hotkey": null,
+    "intro": "Clone (copy) the selected molecule(s).",
+    "menu_path": "Edit/Molecules/Clone...",
+    "plugin_id": "clonemol",
+    "tags": [
+      "all"
+    ],
+    "title": "Clone Molecule",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "The name of the new, cloned molecule.",
+        "enabled": true,
+        "id": "newName",
+        "label": "",
+        "placeHolder": "Name of new cloned molecule...",
+        "type": "UserArgType.Text",
+        "val": "4WP4:cloned"
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:31:41.423901+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

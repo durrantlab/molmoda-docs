@@ -1,0 +1,24 @@
+{
+  "plugin_id": "selectvisible",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin selects all molecules that are currently visible in the viewer and deselects those that are hidden.",
+    "hotkey": null,
+    "intro": "Select all visible molecules.",
+    "menu_path": "Edit/Selection/[1] Select Visible",
+    "plugin_id": "selectvisible",
+    "tags": [
+      "all"
+    ],
+    "title": "Select Visible",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:31:05.066899+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

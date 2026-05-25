@@ -1,0 +1,24 @@
+{
+  "plugin_id": "expandall",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin reveals all nested items within the molecular hierarchy.",
+    "hotkey": null,
+    "intro": "Expand all the nodes in the Navigator panel.",
+    "menu_path": "[4] View/Tree/[1] Expand All",
+    "plugin_id": "expandall",
+    "tags": [
+      "all"
+    ],
+    "title": "Expand All",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:29:58.440317+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

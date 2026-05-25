@@ -1,0 +1,24 @@
+{
+  "plugin_id": "clearselection",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin deselects any currently selected items in the Navigator panel.",
+    "hotkey": null,
+    "intro": "Clear the selection of all molecules.",
+    "menu_path": "Edit/Selection/[4] Clear Selection",
+    "plugin_id": "clearselection",
+    "tags": [
+      "all"
+    ],
+    "title": "Clear Selection",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:30:54.505545+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

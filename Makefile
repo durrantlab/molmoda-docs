@@ -4,7 +4,7 @@ PYTHON_VERSION_CONDENSED := 312
 PACKAGE_NAME := molmoda-docs
 CONDA_NAME := $(PACKAGE_NAME)-dev
 CONDA := conda run -n $(CONDA_NAME)
-CONDA_LOCK_OPTIONS := -p linux-64 -p osx-64 -p win-64 --channel conda-forge
+CONDA_LOCK_OPTIONS := -p linux-64 -p osx-64 -p osx-arm64 -p win-64 --channel conda-forge
 
 ###   ENVIRONMENT   ###
 
@@ -14,7 +14,7 @@ export PYTHON_KEYRING_BACKEND := keyring.backends.null.Keyring
 .PHONY: conda-create
 conda-create:
 	- conda deactivate
-	conda remove -y -n $(CONDA_NAME) --all
+	- conda remove -y -n $(CONDA_NAME) --all
 	conda create -y -n $(CONDA_NAME)
 	$(CONDA) conda install -y -c conda-forge python=$(PYTHON_VERSION)
 	$(CONDA) conda install -y conda-lock
@@ -42,12 +42,12 @@ conda-lock:
 	$(CONDA) conda env export --from-history | grep -v "^prefix" > environment.yml
 	$(CONDA) conda-lock -f environment.yml $(CONDA_LOCK_OPTIONS)
 	$(CONDA) cpl-deps pyproject.toml --env_name $(CONDA_NAME)
-	$(CONDA) cpl-clean --env_name $(CONDA_NAME)
+	- $(CONDA) cpl-clean --env_name $(CONDA_NAME)
 
 .PHONY: from-conda-lock
 from-conda-lock:
 	$(CONDA) conda-lock install -n $(CONDA_NAME) conda-lock.yml
-	$(CONDA) cpl-clean --env_name $(CONDA_NAME)
+	- $(CONDA) cpl-clean --env_name $(CONDA_NAME)
 
 .PHONY: pre-commit-install
 pre-commit-install:
@@ -123,8 +123,13 @@ build-remove:
 .PHONY: cleanup
 cleanup: pycache-remove dsstore-remove mypycache-remove ipynbcheckpoints-remove pytestcache-remove
 
-
-
+###   PLUGIN DOCS   ###
+# Regenerates docs/plugins/index.md and docs/plugins/reference/*.md from the
+# manifest.json files under docs/img/auto/. Run automatically by `serve` and
+# `docs`; safe to run by hand. Output is gitignored.
+.PHONY: plugin-docs
+plugin-docs:
+	$(CONDA) python scripts/build_plugin_docs.py
 ###   MKDOCS   ###
 
 mkdocs_port := $(shell \
@@ -144,15 +149,21 @@ mkdocs_port := $(shell \
 )
 
 .PHONY: serve
-serve:
+serve: plugin-docs
 	echo "Served at http://127.0.0.1:$(mkdocs_port)/"
 	$(CONDA) mkdocs serve -a localhost:$(mkdocs_port)
 
 .PHONY: docs
-docs:
+docs: plugin-docs
 	- rm -rf public/
 	$(CONDA) mkdocs build -d public/
 
 .PHONY: open-docs
 open-docs:
-	xdg-open public/index.html 2>/dev/null
+	@if command -v open >/dev/null 2>&1; then \
+		open public/index.html; \
+	elif command -v xdg-open >/dev/null 2>&1; then \
+		xdg-open public/index.html; \
+	else \
+		echo "Open public/index.html in your browser."; \
+	fi

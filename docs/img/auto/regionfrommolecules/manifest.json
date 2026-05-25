@@ -1,0 +1,102 @@
+{
+  "plugin_id": "regionfrommolecules",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin calculates a bounding box or sphere around all atoms in the chosen molecules, with configurable padding.",
+    "hotkey": null,
+    "intro": "Create a region that surrounds the specified molecules.",
+    "menu_path": "Regions/[7] Region From Molecule(s)...",
+    "plugin_id": "regionfrommolecules",
+    "tags": [
+      "docking",
+      "visualization"
+    ],
+    "title": "Region From Molecule(s)",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "makemolinputparams",
+        "label": "Molecules to enclose",
+        "type": "UserArgType.MoleculeInputParams",
+        "val": {
+          "__class__": "MoleculeInput"
+        }
+      },
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "A descriptive name for the new region.",
+        "enabled": true,
+        "id": "regionName",
+        "label": "Region name",
+        "placeHolder": "Name for the new region...",
+        "type": "UserArgType.Text",
+        "val": "region"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "The shape of the region to create.",
+        "enabled": true,
+        "id": "regionType",
+        "label": "Type",
+        "options": [
+          {
+            "description": "Box",
+            "val": "box"
+          },
+          {
+            "description": "Sphere",
+            "val": "sphere"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "box"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Extra space (in Angstroms) added in all directions beyond the bounding atoms.",
+        "enabled": true,
+        "id": "padding",
+        "label": "Padding",
+        "type": "UserArgType.Number",
+        "val": 3.4
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "The transparency of the region in the viewer.",
+        "enabled": true,
+        "id": "opacity",
+        "label": "Opacity",
+        "max": "UserArgType.TextArea",
+        "min": "UserArgType.Text",
+        "step": 0.05,
+        "type": "UserArgType.Range",
+        "val": 0.9
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:32:09.825563+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

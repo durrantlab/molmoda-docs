@@ -1,0 +1,24 @@
+{
+  "plugin_id": "datawindow",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin brings the Data panel into focus, where the user can view molecular properties and other tabular data.",
+    "hotkey": null,
+    "intro": "Switch to the Data panel.",
+    "menu_path": "[8] Window/Molecules/[8] Data",
+    "plugin_id": "datawindow",
+    "tags": [
+      "all"
+    ],
+    "title": "Data Panel",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:30:35.348110+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

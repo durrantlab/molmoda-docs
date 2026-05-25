@@ -1,0 +1,37 @@
+{
+  "plugin_id": "loadpubchem",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin retrieves small molecules from PubChem using either a chemical name or a PubChem Compound ID (CID).",
+    "hotkey": null,
+    "intro": "Load a compound from the PubChem Database of small molecules.",
+    "menu_path": "File/Import/[6] PubChem...",
+    "plugin_id": "loadpubchem",
+    "tags": [
+      "all"
+    ],
+    "title": "Load Molecule from PubChem",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "If appropriate for the file format, removes any counterions and keeps only the largest fragment.",
+        "enabled": true,
+        "id": "desalt",
+        "label": "Desalt molecules",
+        "type": "UserArgType.Checkbox",
+        "val": true
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:31:55.800275+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

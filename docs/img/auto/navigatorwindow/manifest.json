@@ -1,0 +1,24 @@
+{
+  "plugin_id": "navigatorwindow",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin brings the Navigator panel into focus, where the molecular hierarchy is displayed.",
+    "hotkey": null,
+    "intro": "Switch to the Navigator panel.",
+    "menu_path": "[8] Window/Molecules/[1] Navigator",
+    "plugin_id": "navigatorwindow",
+    "tags": [
+      "all"
+    ],
+    "title": "Navigator Panel",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:30:45.344558+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

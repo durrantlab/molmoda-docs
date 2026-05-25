@@ -1,0 +1,39 @@
+{
+  "plugin_id": "renamemol",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin allows the user to change the display name of the selected molecule in the Navigator panel.",
+    "hotkey": null,
+    "intro": "Rename a molecule.",
+    "menu_path": "Edit/Molecules/[1] Rename...",
+    "plugin_id": "renamemol",
+    "tags": [
+      "all"
+    ],
+    "title": "Rename Molecule",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "The new name for this molecule.",
+        "enabled": true,
+        "id": "newName",
+        "label": "",
+        "placeHolder": "Name of new molecule...",
+        "type": "UserArgType.Text",
+        "val": "Protein"
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:30:22.305584+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

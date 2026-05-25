@@ -1,0 +1,24 @@
+{
+  "plugin_id": "about",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "MolModa 2026.5.25 is a browser-based drug-discovery suite, brought to you by the Durrant Lab. It runs computational-chemistry calculations on your local computer, without requiring extensive remote resources.",
+    "hotkey": null,
+    "intro": "Get to know MolModa.",
+    "menu_path": "[1] MolModa/[1] About...",
+    "plugin_id": "about",
+    "tags": [
+      "all"
+    ],
+    "title": "About",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:30:15.917966+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

@@ -1,0 +1,596 @@
+{
+  "plugin_id": "savemolecules",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "The MolModa format (recommended) stores all molecules in one file for easy reloading. Other formats (e.g., PDB) enable compatibility with external programs.",
+    "hotkey": "s",
+    "intro": "Save molecules to the disk.",
+    "menu_path": "File/Project/[1] Save...",
+    "plugin_id": "savemolecules",
+    "tags": [
+      "all"
+    ],
+    "title": "Save Molecule Files",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "The name of the molecule file to save. The file extension will be automatically appended.",
+        "enabled": true,
+        "id": "filename",
+        "label": "",
+        "placeHolder": "Filename (e.g., my_project.molmoda)...",
+        "type": "UserArgType.Text",
+        "val": "4WP4"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "useMolModaFormat",
+        "label": "Save project in .molmoda format",
+        "type": "UserArgType.Checkbox",
+        "val": true
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": false,
+        "id": "whichMolsGroup",
+        "label": "Molecules to Save",
+        "type": "UserArgType.Group",
+        "val": [
+          {
+            "id": "saveVisible",
+            "label": "Visible molecules",
+            "type": "UserArgType.Checkbox",
+            "val": true
+          },
+          {
+            "id": "saveSelected",
+            "label": "Selected molecules",
+            "type": "UserArgType.Checkbox",
+            "val": true
+          },
+          {
+            "id": "saveHiddenAndUnselected",
+            "label": "Other molecules (hidden and unselected)",
+            "type": "UserArgType.Checkbox",
+            "val": false
+          }
+        ]
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": false,
+        "id": "separateComponents",
+        "label": "Save components (Protein, Ligand, etc.) to separate files",
+        "type": "UserArgType.Checkbox",
+        "val": true
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": false,
+        "id": "oneMolFileFormat",
+        "label": "File format for merged molecules",
+        "options": [
+          {
+            "description": "AutoDock PDBQT (.pdbqt)",
+            "val": "pdbqt"
+          },
+          {
+            "description": "AutoDock PDBQT (.pdbqtlig)",
+            "val": "pdbqtlig"
+          },
+          {
+            "description": "Crystallographic Information File (.cif)",
+            "val": "cif"
+          },
+          {
+            "description": "Macromolecular Crystallographic Info (.mcif)",
+            "val": "mcif"
+          },
+          {
+            "description": "Macromolecular transmission (.mmtf)",
+            "val": "mmtf"
+          },
+          {
+            "description": "PQR (.pqr)",
+            "val": "pqr"
+          },
+          {
+            "description": "Protein Data Bank (.pdb)",
+            "val": "pdb"
+          },
+          {
+            "description": "XYZ cartesian coordinates (.xyz)",
+            "val": "xyz"
+          },
+          {
+            "description": "ZIP archive (.zip)",
+            "val": "zip"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "pdb"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": false,
+        "id": "proteinFormat",
+        "label": "Protein format",
+        "options": [
+          {
+            "description": "AutoDock PDBQT (.pdbqt)",
+            "val": "pdbqt"
+          },
+          {
+            "description": "Crystallographic Information File (.cif)",
+            "val": "cif"
+          },
+          {
+            "description": "Macromolecular Crystallographic Info (.mcif)",
+            "val": "mcif"
+          },
+          {
+            "description": "Macromolecular transmission (.mmtf)",
+            "val": "mmtf"
+          },
+          {
+            "description": "PQR (.pqr)",
+            "val": "pqr"
+          },
+          {
+            "description": "Protein Data Bank (.pdb)",
+            "val": "pdb"
+          },
+          {
+            "description": "XYZ cartesian coordinates (.xyz)",
+            "val": "xyz"
+          },
+          {
+            "description": "ZIP archive (.zip)",
+            "val": "zip"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "pdb"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": false,
+        "id": "compoundFormat",
+        "label": "Compound format",
+        "options": [
+          {
+            "description": "AutoDock PDBQT (.pdbqtlig)",
+            "val": "pdbqtlig"
+          },
+          {
+            "description": "Canonical SMILES (.can)",
+            "val": "can"
+          },
+          {
+            "description": "MDL MOL (.sdf)",
+            "val": "sdf"
+          },
+          {
+            "description": "Protein Data Bank (.pdb)",
+            "val": "pdb"
+          },
+          {
+            "description": "SMILES (.smi)",
+            "val": "smi"
+          },
+          {
+            "description": "Sybyl Mol2 (.mol2)",
+            "val": "mol2"
+          },
+          {
+            "description": "XYZ cartesian coordinates (.xyz)",
+            "val": "xyz"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "mol2"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": false,
+        "id": "nucleicFormat",
+        "label": "Nucleic format",
+        "options": [
+          {
+            "description": "AutoDock PDBQT (.pdbqt)",
+            "val": "pdbqt"
+          },
+          {
+            "description": "AutoDock PDBQT (.pdbqtlig)",
+            "val": "pdbqtlig"
+          },
+          {
+            "description": "Canonical SMILES (.can)",
+            "val": "can"
+          },
+          {
+            "description": "Crystallographic Information File (.cif)",
+            "val": "cif"
+          },
+          {
+            "description": "Macromolecular Crystallographic Info (.mcif)",
+            "val": "mcif"
+          },
+          {
+            "description": "Macromolecular transmission (.mmtf)",
+            "val": "mmtf"
+          },
+          {
+            "description": "MDL MOL (.sdf)",
+            "val": "sdf"
+          },
+          {
+            "description": "PQR (.pqr)",
+            "val": "pqr"
+          },
+          {
+            "description": "Protein Data Bank (.pdb)",
+            "val": "pdb"
+          },
+          {
+            "description": "SMILES (.smi)",
+            "val": "smi"
+          },
+          {
+            "description": "Sybyl Mol2 (.mol2)",
+            "val": "mol2"
+          },
+          {
+            "description": "XYZ cartesian coordinates (.xyz)",
+            "val": "xyz"
+          },
+          {
+            "description": "ZIP archive (.zip)",
+            "val": "zip"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "pdb"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": false,
+        "id": "metalFormat",
+        "label": "Metal format",
+        "options": [
+          {
+            "description": "AutoDock PDBQT (.pdbqt)",
+            "val": "pdbqt"
+          },
+          {
+            "description": "AutoDock PDBQT (.pdbqtlig)",
+            "val": "pdbqtlig"
+          },
+          {
+            "description": "Canonical SMILES (.can)",
+            "val": "can"
+          },
+          {
+            "description": "Crystallographic Information File (.cif)",
+            "val": "cif"
+          },
+          {
+            "description": "Macromolecular Crystallographic Info (.mcif)",
+            "val": "mcif"
+          },
+          {
+            "description": "Macromolecular transmission (.mmtf)",
+            "val": "mmtf"
+          },
+          {
+            "description": "MDL MOL (.sdf)",
+            "val": "sdf"
+          },
+          {
+            "description": "PQR (.pqr)",
+            "val": "pqr"
+          },
+          {
+            "description": "Protein Data Bank (.pdb)",
+            "val": "pdb"
+          },
+          {
+            "description": "SMILES (.smi)",
+            "val": "smi"
+          },
+          {
+            "description": "Sybyl Mol2 (.mol2)",
+            "val": "mol2"
+          },
+          {
+            "description": "XYZ cartesian coordinates (.xyz)",
+            "val": "xyz"
+          },
+          {
+            "description": "ZIP archive (.zip)",
+            "val": "zip"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "pdb"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": false,
+        "id": "ionFormat",
+        "label": "Ion format",
+        "options": [
+          {
+            "description": "AutoDock PDBQT (.pdbqt)",
+            "val": "pdbqt"
+          },
+          {
+            "description": "AutoDock PDBQT (.pdbqtlig)",
+            "val": "pdbqtlig"
+          },
+          {
+            "description": "Canonical SMILES (.can)",
+            "val": "can"
+          },
+          {
+            "description": "Crystallographic Information File (.cif)",
+            "val": "cif"
+          },
+          {
+            "description": "Macromolecular Crystallographic Info (.mcif)",
+            "val": "mcif"
+          },
+          {
+            "description": "Macromolecular transmission (.mmtf)",
+            "val": "mmtf"
+          },
+          {
+            "description": "MDL MOL (.sdf)",
+            "val": "sdf"
+          },
+          {
+            "description": "PQR (.pqr)",
+            "val": "pqr"
+          },
+          {
+            "description": "Protein Data Bank (.pdb)",
+            "val": "pdb"
+          },
+          {
+            "description": "SMILES (.smi)",
+            "val": "smi"
+          },
+          {
+            "description": "Sybyl Mol2 (.mol2)",
+            "val": "mol2"
+          },
+          {
+            "description": "XYZ cartesian coordinates (.xyz)",
+            "val": "xyz"
+          },
+          {
+            "description": "ZIP archive (.zip)",
+            "val": "zip"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "pdb"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": false,
+        "id": "lipidFormat",
+        "label": "Lipid format",
+        "options": [
+          {
+            "description": "AutoDock PDBQT (.pdbqt)",
+            "val": "pdbqt"
+          },
+          {
+            "description": "AutoDock PDBQT (.pdbqtlig)",
+            "val": "pdbqtlig"
+          },
+          {
+            "description": "Canonical SMILES (.can)",
+            "val": "can"
+          },
+          {
+            "description": "Crystallographic Information File (.cif)",
+            "val": "cif"
+          },
+          {
+            "description": "Macromolecular Crystallographic Info (.mcif)",
+            "val": "mcif"
+          },
+          {
+            "description": "Macromolecular transmission (.mmtf)",
+            "val": "mmtf"
+          },
+          {
+            "description": "MDL MOL (.sdf)",
+            "val": "sdf"
+          },
+          {
+            "description": "PQR (.pqr)",
+            "val": "pqr"
+          },
+          {
+            "description": "Protein Data Bank (.pdb)",
+            "val": "pdb"
+          },
+          {
+            "description": "SMILES (.smi)",
+            "val": "smi"
+          },
+          {
+            "description": "Sybyl Mol2 (.mol2)",
+            "val": "mol2"
+          },
+          {
+            "description": "XYZ cartesian coordinates (.xyz)",
+            "val": "xyz"
+          },
+          {
+            "description": "ZIP archive (.zip)",
+            "val": "zip"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "pdb"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": false,
+        "id": "solventFormat",
+        "label": "Solvent format",
+        "options": [
+          {
+            "description": "AutoDock PDBQT (.pdbqt)",
+            "val": "pdbqt"
+          },
+          {
+            "description": "Crystallographic Information File (.cif)",
+            "val": "cif"
+          },
+          {
+            "description": "Macromolecular Crystallographic Info (.mcif)",
+            "val": "mcif"
+          },
+          {
+            "description": "Macromolecular transmission (.mmtf)",
+            "val": "mmtf"
+          },
+          {
+            "description": "PQR (.pqr)",
+            "val": "pqr"
+          },
+          {
+            "description": "Protein Data Bank (.pdb)",
+            "val": "pdb"
+          },
+          {
+            "description": "XYZ cartesian coordinates (.xyz)",
+            "val": "xyz"
+          },
+          {
+            "description": "ZIP archive (.zip)",
+            "val": "zip"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "pdb"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": false,
+        "id": "otherFormat",
+        "label": "Other format",
+        "options": [
+          {
+            "description": "AutoDock PDBQT (.pdbqt)",
+            "val": "pdbqt"
+          },
+          {
+            "description": "AutoDock PDBQT (.pdbqtlig)",
+            "val": "pdbqtlig"
+          },
+          {
+            "description": "Canonical SMILES (.can)",
+            "val": "can"
+          },
+          {
+            "description": "Crystallographic Information File (.cif)",
+            "val": "cif"
+          },
+          {
+            "description": "Macromolecular Crystallographic Info (.mcif)",
+            "val": "mcif"
+          },
+          {
+            "description": "Macromolecular transmission (.mmtf)",
+            "val": "mmtf"
+          },
+          {
+            "description": "MDL MOL (.sdf)",
+            "val": "sdf"
+          },
+          {
+            "description": "PQR (.pqr)",
+            "val": "pqr"
+          },
+          {
+            "description": "Protein Data Bank (.pdb)",
+            "val": "pdb"
+          },
+          {
+            "description": "SMILES (.smi)",
+            "val": "smi"
+          },
+          {
+            "description": "Sybyl Mol2 (.mol2)",
+            "val": "mol2"
+          },
+          {
+            "description": "XYZ cartesian coordinates (.xyz)",
+            "val": "xyz"
+          },
+          {
+            "description": "ZIP archive (.zip)",
+            "val": "zip"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "pdb"
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:32:08.836140+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

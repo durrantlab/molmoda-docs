@@ -1,0 +1,24 @@
+{
+  "plugin_id": "editcompound",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin opens the selected compound in a molecular editor for modification.",
+    "hotkey": null,
+    "intro": "Edit a compound.",
+    "menu_path": "Compounds/[2] Build/[5] Edit Compound...",
+    "plugin_id": "editcompound",
+    "tags": [
+      "all"
+    ],
+    "title": "Edit Compound",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:31:34.428804+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

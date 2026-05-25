@@ -1,0 +1,39 @@
+{
+  "plugin_id": "poseview",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin provides a two-dimensional layout of molecular interactions to facilitate binding-pose analysis.",
+    "hotkey": null,
+    "intro": "Use PoseView to generate a 2D interaction diagram showing protein-ligand interactions.",
+    "menu_path": "Binding/[6] Analysis/[9] Interaction Diagram...",
+    "plugin_id": "poseview",
+    "tags": [
+      "visualization",
+      "docking"
+    ],
+    "title": "2D Interaction Diagram",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "makemolinputparams",
+        "label": "Proteins and compound to consider",
+        "type": "UserArgType.MoleculeInputParams",
+        "val": {
+          "__class__": "MoleculeInput"
+        }
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:32:09.768789+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

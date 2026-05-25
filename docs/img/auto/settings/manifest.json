@@ -1,0 +1,118 @@
+{
+  "plugin_id": "settings",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin configures global preferences.",
+    "hotkey": null,
+    "intro": "Modify MolModa general settings.",
+    "menu_path": "[1] MolModa/[2] Settings...",
+    "plugin_id": "settings",
+    "tags": [
+      "all"
+    ],
+    "title": "Settings",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Allow cookies so we can (1) save your user settings and (2) collect usage statistics to help us get grants for continued development.",
+        "enabled": true,
+        "id": "allowCookies",
+        "label": "Allow cookies",
+        "type": "UserArgType.Checkbox",
+        "val": false
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "alertType": "warning",
+        "enabled": true,
+        "id": "allowCookiesAlert",
+        "type": "UserArgType.Alert",
+        "val": "Please allow cookies! They improve the user experience and help us secure much needed funding."
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "MolModa requires user permission to access external web resources. To avoid having to approve each individually, you may authorize all.",
+        "enabled": true,
+        "id": "allowExternalWebAccess",
+        "label": "Allow access to all external web resources",
+        "type": "UserArgType.Checkbox",
+        "val": false
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Maximum number of processors available for any one job.",
+        "enabled": true,
+        "id": "maxProcs",
+        "label": "Maximum number of available processors",
+        "type": "UserArgType.Number",
+        "val": 15
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Number of compounds initially visible when creating/loading many new compounds.",
+        "enabled": true,
+        "id": "initialCompoundsVisible",
+        "label": "Compounds initially visible",
+        "type": "UserArgType.Number",
+        "val": 20
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "How often (in minutes) to automatically save a backup of your session for emergency recovery. Set to 0 to disable.",
+        "enabled": false,
+        "id": "autoSaveFrequencyMinutes",
+        "label": "Auto save frequency",
+        "type": "UserArgType.Number",
+        "val": "UserArgType.Range"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Only 3Dmol.js is currently supported.",
+        "enabled": false,
+        "id": "molViewer",
+        "label": "Molecular viewer library",
+        "options": [
+          {
+            "description": "3Dmol.js",
+            "val": "3dmol"
+          },
+          {
+            "description": "NGL Viewer",
+            "val": "ngl"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "3dmol"
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:31:45.551379+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

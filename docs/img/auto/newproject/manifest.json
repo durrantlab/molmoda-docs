@@ -1,0 +1,24 @@
+{
+  "plugin_id": "newproject",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin clears all current data and starts a fresh session.",
+    "hotkey": "n",
+    "intro": "Start a new project. Your current project will be lost.",
+    "menu_path": "File/[1] Project/[0] New...",
+    "plugin_id": "newproject",
+    "tags": [
+      "all"
+    ],
+    "title": "New Project",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:29:55.746798+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

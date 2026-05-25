@@ -1,0 +1,24 @@
+{
+  "plugin_id": "help",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin provides a searchable list of all available plugins with descriptions of their functionality.",
+    "hotkey": null,
+    "intro": "List information about each of the loaded plugins.",
+    "menu_path": "Help/[5] Plugin Info...",
+    "plugin_id": "help",
+    "tags": [
+      "all"
+    ],
+    "title": "Plugin Info",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:31:47.753264+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

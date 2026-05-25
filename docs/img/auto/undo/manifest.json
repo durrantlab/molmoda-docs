@@ -1,0 +1,24 @@
+{
+  "plugin_id": "undo",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin reverses the last change made to the project state.",
+    "hotkey": "z",
+    "intro": "Undo the last action.",
+    "menu_path": "Edit/[0] Revisions/[1] Undo",
+    "plugin_id": "undo",
+    "tags": [
+      "all"
+    ],
+    "title": "Undo",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:30:16.981134+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

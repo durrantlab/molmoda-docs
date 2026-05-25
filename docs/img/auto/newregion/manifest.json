@@ -1,0 +1,135 @@
+{
+  "plugin_id": "newregion",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin adds regions, which may be used to define the search space for docking calculations.",
+    "hotkey": null,
+    "intro": "Add a new box or spherical region to the project.",
+    "menu_path": "Regions/New Region...",
+    "plugin_id": "newregion",
+    "tags": [
+      "docking"
+    ],
+    "title": "New Region",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "alertType": "info",
+        "enabled": true,
+        "id": "alert",
+        "type": "UserArgType.Alert",
+        "val": "After adding a region, select it in the Navigator panel. You can then change its location and size via the Styles panel or by clicking atoms in the Viewer panel."
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "regionType",
+        "label": "Type",
+        "options": [
+          {
+            "description": "Box",
+            "val": "box"
+          },
+          {
+            "description": "Sphere",
+            "val": "sphere"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "box"
+      },
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "regionName",
+        "label": "Name",
+        "type": "UserArgType.Text",
+        "val": "region"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "dimensions",
+        "label": "Dimensions",
+        "type": "UserArgType.Vector3D",
+        "val": [
+          20,
+          20,
+          20
+        ]
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": false,
+        "id": "radius",
+        "label": "Radius",
+        "type": "UserArgType.Number",
+        "val": "UserArgType.Alert"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "center",
+        "label": "Center",
+        "type": "UserArgType.Vector3D",
+        "val": [
+          12.046,
+          10.442,
+          11.135
+        ]
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "color",
+        "label": "Color",
+        "type": "UserArgType.Color",
+        "val": "#df95f5"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "opacity",
+        "label": "Opacity",
+        "max": "UserArgType.TextArea",
+        "min": "UserArgType.Text",
+        "step": 0.05,
+        "type": "UserArgType.Range",
+        "val": 0.9
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:31:14.879233+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

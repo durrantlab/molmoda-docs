@@ -1,0 +1,24 @@
+{
+  "plugin_id": "downtreenav",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin provides a keyboard-friendly way to navigate through molecules one by one in the 3D viewer.",
+    "hotkey": "]",
+    "intro": "Toggle visibility and focus with the molecule below the selected one.",
+    "menu_path": "View/[6] Toggles/[8] Toggle Down",
+    "plugin_id": "downtreenav",
+    "tags": [
+      "all"
+    ],
+    "title": "Toggle Down",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:30:02.253220+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

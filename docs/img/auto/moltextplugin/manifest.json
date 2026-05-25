@@ -1,0 +1,130 @@
+{
+  "plugin_id": "moltextplugin",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin allows you to manually enter or paste molecular data in various formats.",
+    "hotkey": null,
+    "intro": "Type or paste molecular text.",
+    "menu_path": "File/Import/[7] Molecular Text...",
+    "plugin_id": "moltextplugin",
+    "tags": [
+      "all"
+    ],
+    "title": "Molecular Text",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "The name of the new molecule.",
+        "enabled": true,
+        "id": "pastedMolName",
+        "label": "",
+        "placeHolder": "Name of the new molecule...",
+        "type": "UserArgType.Text",
+        "val": "PastedMol"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "The contents of the molecule file. Type or paste the text here.",
+        "enabled": true,
+        "id": "molTextArea",
+        "placeHolder": "Molecular text...",
+        "type": "UserArgType.TextArea",
+        "val": ""
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "format",
+        "label": "Format",
+        "options": [
+          {
+            "description": "Protein Data Bank (*.pdb)",
+            "val": "pdb"
+          },
+          {
+            "description": "Sybyl Mol2 (*.mol2)",
+            "val": "mol2"
+          },
+          {
+            "description": "MDL MOL (*.sdf)",
+            "val": "sdf"
+          },
+          {
+            "description": "SMILES (*.smi)",
+            "val": "smi"
+          },
+          {
+            "description": "Unknown format",
+            "val": "unknown"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "unknown"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "If appropriate for the file format, removes any counterions and keeps only the largest fragment.",
+        "enabled": true,
+        "id": "desalt",
+        "label": "Desalt molecules",
+        "type": "UserArgType.Checkbox",
+        "val": true
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "For molecules without 3D coordinates (e.g., SMILES), choose how to generate those coordinates. Otherwise, this parameter is ignored.",
+        "enabled": true,
+        "id": "gen3D",
+        "label": "Generate 3D coordinates",
+        "options": [
+          {
+            "description": "fastest: no forcefield optimization or conformer search",
+            "val": "fastest"
+          },
+          {
+            "description": "fast: quick forcefield optimization, no conformer search",
+            "val": "fast"
+          },
+          {
+            "description": "medium: quick forcefield optimization and fast conformer search",
+            "val": "medium"
+          },
+          {
+            "description": "better: medium forcefield optimization and fast conformer search",
+            "val": "better"
+          },
+          {
+            "description": "best: max forcefield optimization and thorough conformer search",
+            "val": "best"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "best"
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:31:51.417910+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

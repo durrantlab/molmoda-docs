@@ -1,0 +1,24 @@
+{
+  "plugin_id": "copyclipboard",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin copies molecular data in PDB or MOL2 format, depending on the selection, for use in other applications.",
+    "hotkey": "c",
+    "intro": "Copy the selected molecules to the clipboard.",
+    "menu_path": "Edit/Clipboard/Copy",
+    "plugin_id": "copyclipboard",
+    "tags": [
+      "all"
+    ],
+    "title": "Copy to Clipboard",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:32:03.284541+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

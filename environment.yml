@@ -1,12 +1,15 @@
 name: molmoda-docs-dev
 channels:
+  - conda-forge
+  - bioconda
   - defaults
+  - salilab
 dependencies:
   - python=3.12.1
   - conda-lock
   - poetry
   - pre-commit
-  - tomli
   - tomli-w
+  - tomli
   - conda-poetry-liaison
   - nodejs

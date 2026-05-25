@@ -1,0 +1,144 @@
+{
+  "plugin_id": "fpocketweb",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin also calculates pocket properties using the fpocket algorithm (FPocketWeb).",
+    "hotkey": null,
+    "intro": "Identify small-molecule binding pockets on protein surfaces.",
+    "menu_path": "Proteins/[7] Detect Pockets...",
+    "plugin_id": "fpocketweb",
+    "tags": [
+      "docking"
+    ],
+    "title": "Pocket Detection",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "makemolinputparams",
+        "type": "UserArgType.MoleculeInputParams",
+        "val": {
+          "__class__": "MoleculeInput"
+        }
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "providePseudoAtoms",
+        "label": "Provide pocket-filling pseudo atoms for visualization",
+        "type": "UserArgType.Checkbox",
+        "val": false
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "pocketDetectionParams",
+        "label": "Optional Pocket Detection Parameters",
+        "type": "UserArgType.Group",
+        "val": [
+          {
+            "alertType": "warning",
+            "id": "warning",
+            "type": "UserArgType.Alert",
+            "val": "Unless you are an expert user, these advanced parameters are best left unmodified"
+          },
+          {
+            "id": "min_alpha_size",
+            "label": "Minimum radius of an alpha-sphere",
+            "type": "UserArgType.Number",
+            "val": 3.4
+          },
+          {
+            "id": "max_alpha_size",
+            "label": "Maximum radius of an alpha-sphere",
+            "type": "UserArgType.Number",
+            "val": 6.2
+          },
+          {
+            "id": "clustering_distance",
+            "label": "Distance threshold for clustering algorithm",
+            "type": "UserArgType.Number",
+            "val": 2.4
+          },
+          {
+            "id": "clustering_method",
+            "label": "Clustering method for grouping voronoi vertices",
+            "options": [
+              {
+                "description": "s : single linkage clustering",
+                "val": "s"
+              },
+              {
+                "description": "m : complete linkage clustering",
+                "val": "m"
+              },
+              {
+                "description": "a : average linkage clustering",
+                "val": "a"
+              }
+            ],
+            "type": "UserArgType.Select",
+            "val": "s"
+          },
+          {
+            "id": "clustering_measure",
+            "label": "Distance measure for clustering",
+            "options": [
+              {
+                "description": "e : euclidean distance",
+                "val": "e"
+              },
+              {
+                "description": "b : Manhattan distance",
+                "val": "b"
+              }
+            ],
+            "type": "UserArgType.Select",
+            "val": "e"
+          },
+          {
+            "id": "min_spheres_per_pocket",
+            "label": "Minimum number of a-sphere per pocket",
+            "type": "UserArgType.Number",
+            "val": 15
+          },
+          {
+            "id": "ratio_apol_spheres_pocket",
+            "label": "Minimum proportion of apolar sphere in a pocket (remove otherwise)",
+            "type": "UserArgType.Number",
+            "val": "UserArgType.Text"
+          },
+          {
+            "id": "number_apol_asph_pocket",
+            "label": "Minimum number of apolar neighbor for an a-sphere to be considered as apolar",
+            "type": "UserArgType.Number",
+            "val": "UserArgType.Color"
+          },
+          {
+            "id": "iterations_volume_mc",
+            "label": "Number of Monte-Carlo iterations for calculating each pocket volume",
+            "type": "UserArgType.Number",
+            "val": 300
+          }
+        ]
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:31:40.953046+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

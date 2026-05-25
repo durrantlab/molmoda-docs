@@ -1,0 +1,24 @@
+{
+  "plugin_id": "copyassmiles",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin is useful for transferring the structure of a small-molecule compound to other applications that support the SMILES format.",
+    "hotkey": null,
+    "intro": "Copy the selected compound(s) to the clipboard as SMILES strings.",
+    "menu_path": "Edit/Clipboard/Copy as SMILES",
+    "plugin_id": "copyassmiles",
+    "tags": [
+      "all"
+    ],
+    "title": "Copy SMILES to Clipboard",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:31:43.459963+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

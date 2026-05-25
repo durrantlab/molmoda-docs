@@ -1,0 +1,24 @@
+{
+  "plugin_id": "temporaryshare",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin will upload your session to a remote server and generate a unique, temporary link that you can use to open the session on another device. The link will expire after a short period.",
+    "hotkey": null,
+    "intro": "Temporarily share your current session via a link and QR code.",
+    "menu_path": "File/[1] Project/[7] Share...",
+    "plugin_id": "temporaryshare",
+    "tags": [
+      "all"
+    ],
+    "title": "Temporary Share",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:31:19.272443+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

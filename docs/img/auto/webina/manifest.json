@@ -1,0 +1,161 @@
+{
+  "plugin_id": "webina",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin uses a version of AutoDock Vina (Webina) to perform the docking calculations.",
+    "hotkey": null,
+    "intro": "Predict the geometry (pose) and strength (affinity) of small-molecule binding.",
+    "menu_path": "[6] Binding/Docking/[2] Perform Docking&#47;Scoring...",
+    "plugin_id": "webina",
+    "tags": [
+      "docking"
+    ],
+    "title": "Compound Docking/Scoring",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "makemolinputparams",
+        "type": "UserArgType.MoleculeInputParams",
+        "val": {
+          "__class__": "MoleculeInput"
+        }
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "region",
+        "type": "UserArgType.SelectRegion",
+        "val": {
+          "center": [
+            "UserArgType.Text",
+            "UserArgType.Text",
+            "UserArgType.Text"
+          ],
+          "dimensions": [
+            20,
+            20,
+            20
+          ],
+          "radius": 20
+        }
+      },
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "The number of processors to use for docking.",
+        "enabled": true,
+        "id": "cpu",
+        "label": "Number of processors",
+        "type": "UserArgType.Number",
+        "val": 15
+      },
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "How thoroughly to search for the pose. Roughly proportional to time.",
+        "enabled": true,
+        "id": "exhaustiveness",
+        "label": "Exhaustiveness",
+        "type": "UserArgType.Number",
+        "val": "UserArgType.Checkbox"
+      },
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Compounds with too many rotatable bonds will be skipped to avoid excessive run times and less accurate predictions.",
+        "enabled": true,
+        "id": "maxRotBonds",
+        "label": "Maximum rotatable bonds",
+        "type": "UserArgType.Number",
+        "val": 15
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Scores existing docked or crystallographic poses, without repositioning compounds.",
+        "enabled": true,
+        "id": "score_only",
+        "label": "Score existing poses, without redocking",
+        "type": "UserArgType.Checkbox",
+        "val": false
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Docking generates multiple poses; the top-scoring pose is often correct, but sometimes alternatives may be more accurate.",
+        "enabled": true,
+        "id": "keep_only_best",
+        "label": "Keep only highest-scoring pose for each compound",
+        "type": "UserArgType.Checkbox",
+        "val": true
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "webinaAdvancedParams",
+        "label": "Advanced docking parameters",
+        "type": "UserArgType.Group",
+        "val": [
+          {
+            "alertType": "warning",
+            "id": "warning",
+            "type": "UserArgType.Alert",
+            "val": "Unless you are an expert user, these advanced parameters are best left unmodified."
+          },
+          {
+            "description": "The explicit seed. Useful if reproducibility is critical.",
+            "id": "seed",
+            "label": "Seed",
+            "type": "UserArgType.Number",
+            "val": "UserArgType.TextArea"
+          },
+          {
+            "description": "The maximum number of binding poses to show.",
+            "id": "num_modes",
+            "label": "Number of modes",
+            "type": "UserArgType.Number",
+            "val": "UserArgType.Vector3D"
+          },
+          {
+            "description": "The maximum energy difference between the best and worst pose.",
+            "id": "energy_range",
+            "label": "Energy range",
+            "type": "UserArgType.Number",
+            "val": "UserArgType.Color"
+          }
+        ]
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:31:46.978404+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "plugin_id": "mergemols",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin is useful for combining multiple structures, such as a protein and several ligands, into one entry.",
+    "hotkey": null,
+    "intro": "Copy and merge the selected molecules into a single new molecule.",
+    "menu_path": "Edit/Molecules/[5] Merge...",
+    "plugin_id": "mergemols",
+    "tags": [
+      "all"
+    ],
+    "title": "Merge Molecules",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "The name of the new, merged molecule.",
+        "enabled": true,
+        "id": "newName",
+        "label": "",
+        "placeHolder": "Name of new merged molecule...",
+        "type": "UserArgType.Text",
+        "val": "4WP4:merged"
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:30:34.206377+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "plugin_id": "reduce",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin uses the reduce program to guess at proper protonation states.",
+    "hotkey": null,
+    "intro": "Protonate/deprotonate proteins, in preparation for docking.",
+    "menu_path": "Proteins/Protein Protonation_...",
+    "plugin_id": "reduce",
+    "tags": [
+      "modeling",
+      "docking"
+    ],
+    "title": "Protonate/Deprotonate Proteins",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "makemolinputparams",
+        "type": "UserArgType.MoleculeInputParams",
+        "val": {
+          "__class__": "MoleculeInput"
+        }
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:30:51.530964+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

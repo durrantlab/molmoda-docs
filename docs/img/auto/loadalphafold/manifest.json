@@ -1,0 +1,39 @@
+{
+  "plugin_id": "loadalphafold",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin retrieves AlphaFold-predicted protein models using a UniProt accession number.",
+    "hotkey": null,
+    "intro": "Load a protein from the AlphaFold Protein Structure Database of predicted protein structures.",
+    "menu_path": "File/Import/[4] AlphaFold...",
+    "plugin_id": "loadalphafold",
+    "tags": [
+      "all"
+    ],
+    "title": "Load AlphaFold Structure",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "The UniProt Accession of the protein structure. Search the AlphaFold Protein Structure Database if you're uncertain.",
+        "enabled": true,
+        "id": "uniprot",
+        "label": "",
+        "placeHolder": "UniProt Accession (e.g., P86927)...",
+        "type": "UserArgType.Text",
+        "val": ""
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:32:03.594078+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

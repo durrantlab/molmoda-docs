@@ -1,0 +1,24 @@
+{
+  "plugin_id": "styleswindow",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin brings the Styles panel into focus, where you can change the visual representation of molecules.",
+    "hotkey": null,
+    "intro": "Switch to the Styles panel.",
+    "menu_path": "[8] Window/Molecules/[5] Styles",
+    "plugin_id": "styleswindow",
+    "tags": [
+      "all"
+    ],
+    "title": "Styles Panel",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:31:03.589769+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "plugin_id": "informationwindow",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin brings the Information panel into focus, which displays details about the selected molecule.",
+    "hotkey": null,
+    "intro": "Switch to the Information panel.",
+    "menu_path": "[8] Window/Molecules/[7] Information",
+    "plugin_id": "informationwindow",
+    "tags": [
+      "all"
+    ],
+    "title": "Information Panel",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:30:59.649199+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

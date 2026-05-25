@@ -1,0 +1,621 @@
+{
+  "plugin_id": "addnewvisualization",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin allows for the creation of custom styles to highlight specific parts of a molecule.",
+    "hotkey": null,
+    "intro": "Define a new visualization by specifying selection criteria, representation, and color.",
+    "menu_path": "View/Visualizations/New Visualization...",
+    "plugin_id": "addnewvisualization",
+    "tags": [
+      "visualization",
+      "all"
+    ],
+    "title": "New Visualization",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "A unique name for this visualization.",
+        "enabled": true,
+        "id": "styleName",
+        "label": "Visualization name",
+        "placeHolder": "Blue Lysines...",
+        "type": "UserArgType.Text",
+        "val": ""
+      },
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Optional. Apply this visualization only to the molecule with this ID. Leave blank to apply to all molecules.",
+        "enabled": false,
+        "id": "moleculeId",
+        "label": "Apply to molecule",
+        "placeHolder": "(Optional) Molecule ID...",
+        "type": "UserArgType.Text",
+        "val": ""
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Comma or space separated list of residue names (e.g. LYS ALA TRP) or macro keywords (acidic, basic, hydrophobic, etc.). 'Any' (empty list) to include all residues.",
+        "enabled": true,
+        "id": "selectionResidueNames",
+        "inputType": "text",
+        "label": "Residue names",
+        "options": [
+          {
+            "description": "ALA",
+            "val": "ALA"
+          },
+          {
+            "description": "ARG",
+            "val": "ARG"
+          },
+          {
+            "description": "ASN",
+            "val": "ASN"
+          },
+          {
+            "description": "ASP",
+            "val": "ASP"
+          },
+          {
+            "description": "CYS",
+            "val": "CYS"
+          },
+          {
+            "description": "GLN",
+            "val": "GLN"
+          },
+          {
+            "description": "GLU",
+            "val": "GLU"
+          },
+          {
+            "description": "GLY",
+            "val": "GLY"
+          },
+          {
+            "description": "HIS",
+            "val": "HIS"
+          },
+          {
+            "description": "HOH",
+            "val": "HOH"
+          },
+          {
+            "description": "LEU",
+            "val": "LEU"
+          },
+          {
+            "description": "LYS",
+            "val": "LYS"
+          },
+          {
+            "description": "PRO",
+            "val": "PRO"
+          },
+          {
+            "description": "SER",
+            "val": "SER"
+          },
+          {
+            "description": "THR",
+            "val": "THR"
+          },
+          {
+            "description": "TOU",
+            "val": "TOU"
+          },
+          {
+            "description": "TRP",
+            "val": "TRP"
+          },
+          {
+            "description": "TYR",
+            "val": "TYR"
+          },
+          {
+            "description": "---",
+            "disabled": true,
+            "val": "--separator--"
+          },
+          {
+            "description": "acidic",
+            "val": "acidic"
+          },
+          {
+            "description": "aliphatic",
+            "val": "aliphatic"
+          },
+          {
+            "description": "aromatic",
+            "val": "aromatic"
+          },
+          {
+            "description": "basic",
+            "val": "basic"
+          },
+          {
+            "description": "charged",
+            "val": "charged"
+          },
+          {
+            "description": "hydrophobic",
+            "val": "hydrophobic"
+          },
+          {
+            "description": "neutral",
+            "val": "neutral"
+          },
+          {
+            "description": "purine",
+            "val": "purine"
+          },
+          {
+            "description": "pyrimidine",
+            "val": "pyrimidine"
+          }
+        ],
+        "placeHolder": "LYS,ALA,TRP or acidic,basic (or leave empty for all)...",
+        "type": "UserArgType.ListSelect",
+        "val": []
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Comma or space separated list of residue numbers or ranges (e.g., 10-20 35 42). 'Any' (empty list) to include all residues.",
+        "enabled": true,
+        "id": "selectionResidueIds",
+        "inputType": "number",
+        "label": "Residue numbers",
+        "options": [
+          {
+            "description": "1",
+            "val": "UserArgType.TextArea"
+          },
+          {
+            "description": "2",
+            "val": "UserArgType.Number"
+          },
+          {
+            "description": "3",
+            "val": "UserArgType.Color"
+          },
+          {
+            "description": "4",
+            "val": "UserArgType.Select"
+          },
+          {
+            "description": "5",
+            "val": "UserArgType.Range"
+          },
+          {
+            "description": "6",
+            "val": "UserArgType.Group"
+          },
+          {
+            "description": "7",
+            "val": "UserArgType.MoleculeInputParams"
+          },
+          {
+            "description": "8",
+            "val": "UserArgType.Checkbox"
+          },
+          {
+            "description": "9",
+            "val": "UserArgType.Vector3D"
+          },
+          {
+            "description": "10",
+            "val": "UserArgType.Alert"
+          },
+          {
+            "description": "11",
+            "val": "UserArgType.SelectRegion"
+          },
+          {
+            "description": "12",
+            "val": "UserArgType.ListSelect"
+          },
+          {
+            "description": "13",
+            "val": "UserArgType.SelectMolecule"
+          },
+          {
+            "description": "14",
+            "val": 14
+          },
+          {
+            "description": "15",
+            "val": 15
+          },
+          {
+            "description": "16",
+            "val": 16
+          },
+          {
+            "description": "17",
+            "val": 17
+          },
+          {
+            "description": "18",
+            "val": 18
+          },
+          {
+            "description": "19",
+            "val": 19
+          },
+          {
+            "description": "20",
+            "val": 20
+          },
+          {
+            "description": "21",
+            "val": 21
+          },
+          {
+            "description": "22",
+            "val": 22
+          },
+          {
+            "description": "23",
+            "val": 23
+          },
+          {
+            "description": "24",
+            "val": 24
+          },
+          {
+            "description": "25",
+            "val": 25
+          },
+          {
+            "description": "26",
+            "val": 26
+          },
+          {
+            "description": "27",
+            "val": 27
+          },
+          {
+            "description": "28",
+            "val": 28
+          },
+          {
+            "description": "29",
+            "val": 29
+          },
+          {
+            "description": "30",
+            "val": 30
+          },
+          {
+            "description": "31",
+            "val": 31
+          },
+          {
+            "description": "32",
+            "val": 32
+          },
+          {
+            "description": "33",
+            "val": 33
+          },
+          {
+            "description": "34",
+            "val": 34
+          },
+          {
+            "description": "35",
+            "val": 35
+          },
+          {
+            "description": "36",
+            "val": 36
+          },
+          {
+            "description": "37",
+            "val": 37
+          },
+          {
+            "description": "38",
+            "val": 38
+          },
+          {
+            "description": "39",
+            "val": 39
+          },
+          {
+            "description": "40",
+            "val": 40
+          },
+          {
+            "description": "41",
+            "val": 41
+          },
+          {
+            "description": "42",
+            "val": 42
+          },
+          {
+            "description": "43",
+            "val": 43
+          },
+          {
+            "description": "101",
+            "val": 101
+          },
+          {
+            "description": "201",
+            "val": 201
+          },
+          {
+            "description": "202",
+            "val": 202
+          },
+          {
+            "description": "203",
+            "val": 203
+          },
+          {
+            "description": "204",
+            "val": 204
+          },
+          {
+            "description": "205",
+            "val": 205
+          },
+          {
+            "description": "206",
+            "val": 206
+          },
+          {
+            "description": "207",
+            "val": 207
+          },
+          {
+            "description": "208",
+            "val": 208
+          },
+          {
+            "description": "209",
+            "val": 209
+          },
+          {
+            "description": "210",
+            "val": 210
+          },
+          {
+            "description": "211",
+            "val": 211
+          },
+          {
+            "description": "212",
+            "val": 212
+          },
+          {
+            "description": "213",
+            "val": 213
+          },
+          {
+            "description": "214",
+            "val": 214
+          },
+          {
+            "description": "215",
+            "val": 215
+          },
+          {
+            "description": "216",
+            "val": 216
+          },
+          {
+            "description": "217",
+            "val": 217
+          },
+          {
+            "description": "218",
+            "val": 218
+          },
+          {
+            "description": "219",
+            "val": 219
+          },
+          {
+            "description": "220",
+            "val": 220
+          },
+          {
+            "description": "221",
+            "val": 221
+          },
+          {
+            "description": "222",
+            "val": 222
+          },
+          {
+            "description": "223",
+            "val": 223
+          },
+          {
+            "description": "224",
+            "val": 224
+          },
+          {
+            "description": "225",
+            "val": 225
+          },
+          {
+            "description": "226",
+            "val": 226
+          },
+          {
+            "description": "227",
+            "val": 227
+          },
+          {
+            "description": "228",
+            "val": 228
+          },
+          {
+            "description": "229",
+            "val": 229
+          },
+          {
+            "description": "230",
+            "val": 230
+          },
+          {
+            "description": "231",
+            "val": 231
+          },
+          {
+            "description": "232",
+            "val": 232
+          },
+          {
+            "description": "233",
+            "val": 233
+          },
+          {
+            "description": "234",
+            "val": 234
+          },
+          {
+            "description": "235",
+            "val": 235
+          },
+          {
+            "description": "236",
+            "val": 236
+          },
+          {
+            "description": "237",
+            "val": 237
+          },
+          {
+            "description": "238",
+            "val": 238
+          },
+          {
+            "description": "239",
+            "val": 239
+          },
+          {
+            "description": "240",
+            "val": 240
+          },
+          {
+            "description": "241",
+            "val": 241
+          },
+          {
+            "description": "242",
+            "val": 242
+          },
+          {
+            "description": "243",
+            "val": 243
+          },
+          {
+            "description": "244",
+            "val": 244
+          },
+          {
+            "description": "245",
+            "val": 245
+          },
+          {
+            "description": "246",
+            "val": 246
+          },
+          {
+            "description": "247",
+            "val": 247
+          },
+          {
+            "description": "248",
+            "val": 248
+          },
+          {
+            "description": "249",
+            "val": 249
+          },
+          {
+            "description": "250",
+            "val": 250
+          },
+          {
+            "description": "251",
+            "val": 251
+          },
+          {
+            "description": "252",
+            "val": 252
+          },
+          {
+            "description": "253",
+            "val": 253
+          }
+        ],
+        "placeHolder": "10-20,35,42 (or leave empty for all)...",
+        "type": "UserArgType.ListSelect",
+        "val": []
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Choose how the selected atoms will be displayed.",
+        "enabled": true,
+        "id": "representationType",
+        "label": "Representation",
+        "options": [
+          {
+            "description": "Sphere",
+            "val": "sphere"
+          },
+          {
+            "description": "Stick",
+            "val": "stick"
+          },
+          {
+            "description": "Line",
+            "val": "line"
+          },
+          {
+            "description": "Cartoon",
+            "val": "cartoon"
+          },
+          {
+            "description": "Surface",
+            "val": "surface"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "sphere"
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:31:50.293553+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

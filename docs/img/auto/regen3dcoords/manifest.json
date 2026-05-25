@@ -1,0 +1,72 @@
+{
+  "plugin_id": "regen3dcoords",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin uses Open Babel to regenerate (correct) the 3D coordinates of compounds that are flat or have poor geometries.",
+    "hotkey": null,
+    "intro": "Regenerate small-molecule atomic coordinates.",
+    "menu_path": "Compounds/Build/[3] Rebuild Compounds...",
+    "plugin_id": "regen3dcoords",
+    "tags": [
+      "modeling",
+      "cheminformatics"
+    ],
+    "title": "Rebuild Compound Coordinates",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "makemolinputparams",
+        "type": "UserArgType.MoleculeInputParams",
+        "val": {
+          "__class__": "MoleculeInput"
+        }
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Choose the quality level for 3D coordinate generation. 'Best' is recommended for accuracy but is slower.",
+        "enabled": true,
+        "id": "gen3D",
+        "label": "3D generation quality",
+        "options": [
+          {
+            "description": "fastest: no forcefield optimization or conformer search",
+            "val": "fastest"
+          },
+          {
+            "description": "fast: quick forcefield optimization, no conformer search",
+            "val": "fast"
+          },
+          {
+            "description": "medium: quick forcefield optimization and fast conformer search",
+            "val": "medium"
+          },
+          {
+            "description": "better: medium forcefield optimization and fast conformer search",
+            "val": "better"
+          },
+          {
+            "description": "best: max forcefield optimization and thorough conformer search",
+            "val": "best"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "best"
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:32:00.657850+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

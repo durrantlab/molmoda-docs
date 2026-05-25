@@ -1,0 +1,24 @@
+{
+  "plugin_id": "selectinverse",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin deselects all currently selected items and selects all unselected items.",
+    "hotkey": "i",
+    "intro": "Invert which molecules are selected in the tree.",
+    "menu_path": "Edit/Selection/[3] Invert Selection",
+    "plugin_id": "selectinverse",
+    "tags": [
+      "all"
+    ],
+    "title": "Invert Selection",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:30:44.939509+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

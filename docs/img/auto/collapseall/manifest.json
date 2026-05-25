@@ -1,0 +1,24 @@
+{
+  "plugin_id": "collapseall",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin helps to tidy up the view when many items are expanded.",
+    "hotkey": null,
+    "intro": "Collapse all the nodes in the Navigator panel.",
+    "menu_path": "View/Tree/[2] Collapse All",
+    "plugin_id": "collapseall",
+    "tags": [
+      "all"
+    ],
+    "title": "Collapse All",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:30:52.703333+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

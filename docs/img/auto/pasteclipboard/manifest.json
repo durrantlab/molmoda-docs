@@ -1,0 +1,85 @@
+{
+  "plugin_id": "pasteclipboard",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin allows users to paste molecular structures from the clipboard in various text formats.",
+    "hotkey": "v",
+    "intro": "Paste a molecule from the clipboard.",
+    "menu_path": "Edit/Clipboard/Paste",
+    "plugin_id": "pasteclipboard",
+    "tags": [
+      "all"
+    ],
+    "title": "Paste from Clipboard",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "The name of the new, pasted molecule.",
+        "enabled": true,
+        "id": "pastedMolName",
+        "label": "",
+        "placeHolder": "Name of pasted molecule...",
+        "type": "UserArgType.Text",
+        "val": "PastedMol"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "If appropriate for the file format, removes any counterions and keeps only the largest fragment.",
+        "enabled": true,
+        "id": "desalt",
+        "label": "Desalt molecules",
+        "type": "UserArgType.Checkbox",
+        "val": true
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "For molecules without 3D coordinates (e.g., SMILES), choose how to generate those coordinates. Otherwise, this parameter is ignored.",
+        "enabled": true,
+        "id": "gen3D",
+        "label": "Generate 3D coordinates",
+        "options": [
+          {
+            "description": "fastest: no forcefield optimization or conformer search",
+            "val": "fastest"
+          },
+          {
+            "description": "fast: quick forcefield optimization, no conformer search",
+            "val": "fast"
+          },
+          {
+            "description": "medium: quick forcefield optimization and fast conformer search",
+            "val": "medium"
+          },
+          {
+            "description": "better: medium forcefield optimization and fast conformer search",
+            "val": "better"
+          },
+          {
+            "description": "best: max forcefield optimization and thorough conformer search",
+            "val": "best"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "best"
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:31:49.759300+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

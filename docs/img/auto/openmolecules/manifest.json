@@ -1,0 +1,83 @@
+{
+  "plugin_id": "openmolecules",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin allows users to import molecular structure files from their local computers.",
+    "hotkey": "o",
+    "intro": "Open (load) molecule file(s).",
+    "menu_path": "[3] File/[1] Project/[0] Open...",
+    "plugin_id": "openmolecules",
+    "tags": [
+      "all"
+    ],
+    "title": "Open Molecule Files",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "If appropriate for the file format, removes any counterions and keeps only the largest fragment.",
+        "enabled": true,
+        "id": "desalt",
+        "label": "Desalt molecules",
+        "type": "UserArgType.Checkbox",
+        "val": true
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "If checked, molecules will be initially invisible. You will have to toggle visibility by hand. Useful if you plan to load many molecules at once.",
+        "enabled": true,
+        "id": "hideOnLoad",
+        "label": "Loaded molecules should be invisible",
+        "type": "UserArgType.Checkbox",
+        "val": false
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "If your file lacks 3D coordinates (e.g., SMILES), choose how to generate those coordinates. Otherwise, this parameter is ignored. Try different methods only if your imported molecules have incorrect geometries.",
+        "enabled": true,
+        "id": "gen3D",
+        "label": "Method for generating 3D coordinates",
+        "options": [
+          {
+            "description": "fastest: no forcefield optimization or conformer search",
+            "val": "fastest"
+          },
+          {
+            "description": "fast: quick forcefield optimization, no conformer search",
+            "val": "fast"
+          },
+          {
+            "description": "medium: quick forcefield optimization and fast conformer search",
+            "val": "medium"
+          },
+          {
+            "description": "better: medium forcefield optimization and fast conformer search",
+            "val": "better"
+          },
+          {
+            "description": "best: max forcefield optimization and thorough conformer search",
+            "val": "best"
+          }
+        ],
+        "type": "UserArgType.Select",
+        "val": "best"
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:31:57.506068+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

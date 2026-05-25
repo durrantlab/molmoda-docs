@@ -1,0 +1,24 @@
+{
+  "plugin_id": "selectall",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin selects every item currently loaded in the Navigator panel.",
+    "hotkey": "a",
+    "intro": "Select all molecules in the tree.",
+    "menu_path": "[4] Edit/Selection/[0] Select All",
+    "plugin_id": "selectall",
+    "tags": [
+      "all"
+    ],
+    "title": "Select All",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:30:04.772013+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "plugin_id": "pubchembioassays",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This tool contacts the online PubChem database to retrieve up to 10 active bioassays for each compound.",
+    "hotkey": null,
+    "intro": "Get the bioassay data of selected compounds from PubChem.",
+    "menu_path": "Compounds/Information/[7] Bioassays...",
+    "plugin_id": "pubchembioassays",
+    "tags": [
+      "cheminformatics"
+    ],
+    "title": "PubChem Bioassays",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "enabled": true,
+        "id": "makemolinputparams",
+        "type": "UserArgType.MoleculeInputParams",
+        "val": {
+          "__class__": "MoleculeInput"
+        }
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "alertType": "warning",
+        "enabled": true,
+        "id": "warning",
+        "type": "UserArgType.Alert",
+        "val": "This process may take some time for multiple molecules. Check the Jobs panel to monitor progress. The data will be added to the Data panel once complete."
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:31:08.132162+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

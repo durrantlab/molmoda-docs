@@ -1,0 +1,65 @@
+{
+  "plugin_id": "evalscreen",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin analyzes the docking scores of both known-active and other (inactive or decoy) compounds to assess how well docking prioritizes the known actives.",
+    "hotkey": null,
+    "intro": "Calculate receiver operating characteristic and enrichment factor curves.",
+    "menu_path": "Binding/Docking/Evaluate Docking...",
+    "plugin_id": "evalscreen",
+    "tags": [
+      "docking"
+    ],
+    "title": "Evaluate Docking Performance",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Label to identify compounds that are active (per experiment). The names of all actives must contain this text.",
+        "enabled": true,
+        "id": "activesLabel",
+        "label": "",
+        "placeHolder": "Known-actives label...",
+        "type": "UserArgType.Text",
+        "val": "active"
+      },
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Label to identify other compounds (inactives or decoys). The names of all compounds that are not known actives must contain this text.",
+        "enabled": true,
+        "id": "otherLabel",
+        "label": "",
+        "placeHolder": "Others label...",
+        "type": "UserArgType.Text",
+        "val": "other"
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "If checked, label case will be ignored. For example, the label \"active\" will match compounds with names containing \"Active\" and \"ACTIVE\".",
+        "enabled": true,
+        "id": "caseInsensitive",
+        "label": "Labels are case insensitive",
+        "type": "UserArgType.Checkbox",
+        "val": false
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:30:59.875397+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

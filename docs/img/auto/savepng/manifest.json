@@ -1,0 +1,39 @@
+{
+  "plugin_id": "savepng",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin captures the molecular viewer's content as a PNG image.",
+    "hotkey": null,
+    "intro": "Save the current view as a PNG file.",
+    "menu_path": "File/Graphics/PNG...",
+    "plugin_id": "savepng",
+    "tags": [
+      "visualization"
+    ],
+    "title": "Save a PNG Image",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "The name of the PNG file to save. The extension \".png\" will be automatically appended.",
+        "enabled": true,
+        "id": "filename",
+        "label": "",
+        "placeHolder": "Filename (e.g., my_image.png)...",
+        "type": "UserArgType.Text",
+        "val": ""
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:30:28.488318+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

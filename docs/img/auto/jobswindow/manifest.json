@@ -1,0 +1,24 @@
+{
+  "plugin_id": "jobswindow",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin brings the Jobs panel into focus, allowing you to monitor the progress of background tasks.",
+    "hotkey": null,
+    "intro": "Switch to the Jobs panel.",
+    "menu_path": "[8] Window/Records/Jobs",
+    "plugin_id": "jobswindow",
+    "tags": [
+      "all"
+    ],
+    "title": "Jobs Panel",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:30:34.432613+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

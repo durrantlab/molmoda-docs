@@ -1,0 +1,24 @@
+{
+  "plugin_id": "logwindow",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin brings the Log panel into focus, where you can see a history of actions and system messages.",
+    "hotkey": null,
+    "intro": "Switch to the Log panel.",
+    "menu_path": "[8] Window/Records/Log",
+    "plugin_id": "logwindow",
+    "tags": [
+      "all"
+    ],
+    "title": "Log Panel",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:30:11.682456+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

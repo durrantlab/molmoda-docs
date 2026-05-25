@@ -1,0 +1,51 @@
+{
+  "plugin_id": "savevrml",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin exports the scene geometry for use in 3D modeling software.",
+    "hotkey": null,
+    "intro": "Save the current molecular scene as a VRML2 file (3D model).",
+    "menu_path": "File/Graphics/3D Model...",
+    "plugin_id": "savevrml",
+    "tags": [
+      "visualization"
+    ],
+    "title": "Save a VRML2 Model",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "The name of the VRML2 file to save. The extension \".wrl\" will be automatically appended.",
+        "enabled": true,
+        "id": "filename",
+        "label": "",
+        "placeHolder": "Filename (e.g., my_model.wrl)...",
+        "type": "UserArgType.Text",
+        "val": ""
+      },
+      {
+        "_dynamic_fields": [
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "Reduce vertex count to shrink size, with some impact on mesh quality.",
+        "enabled": true,
+        "id": "simplifyMesh",
+        "label": "Simplify the mesh",
+        "type": "UserArgType.Checkbox",
+        "val": true
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:32:01.975129+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

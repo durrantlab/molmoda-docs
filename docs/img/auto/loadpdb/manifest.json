@@ -1,0 +1,39 @@
+{
+  "plugin_id": "loadpdb",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin retrieves macromolecular structures from the PDB using their four-character identification codes.",
+    "hotkey": "d",
+    "intro": "Load molecule(s) from the Protein Data Bank, a database of proteins, nucleic acids, etc.",
+    "menu_path": "File/[2] Import/[2] PDB ID...",
+    "plugin_id": "loadpdb",
+    "tags": [
+      "all"
+    ],
+    "title": "Load PDB IDs",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "The PDB IDs of one or more molecular structures, separated by spaces. Search the Protein Data Bank if you're uncertain.",
+        "enabled": true,
+        "id": "pdbId",
+        "label": "",
+        "placeHolder": "PDB IDs (e.g., 1XDN 2HU4)...",
+        "type": "UserArgType.Text",
+        "val": ""
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:32:04.792531+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

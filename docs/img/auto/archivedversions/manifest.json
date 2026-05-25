@@ -1,0 +1,24 @@
+{
+  "plugin_id": "archivedversions",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin retains archived versions for reproducibility and provides the beta version for testing upcoming features.",
+    "hotkey": null,
+    "intro": "Access previous versions of MolModa.",
+    "menu_path": "Help/[8] Archived/[8] Archived Versions...",
+    "plugin_id": "archivedversions",
+    "tags": [
+      "all"
+    ],
+    "title": "Archived Versions",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:30:21.137970+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

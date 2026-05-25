@@ -1,0 +1,24 @@
+{
+  "plugin_id": "togglevisiblemols",
+  "plugin_index": null,
+  "image": null,
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin shows or hides the selected molecules in the 3D viewer.",
+    "hotkey": null,
+    "intro": "Toggle the visibility of the selected molecules.",
+    "menu_path": "View/Toggles/[9] Toggle Visible",
+    "plugin_id": "togglevisiblemols",
+    "tags": [
+      "all"
+    ],
+    "title": "Toggle Visible",
+    "user_args": []
+  },
+  "captured_at": "2026-05-25T20:32:19.261407+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

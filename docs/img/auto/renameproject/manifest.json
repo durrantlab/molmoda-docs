@@ -1,0 +1,39 @@
+{
+  "plugin_id": "renameproject",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin changes the title of the project, which is also used as the default filename when saving.",
+    "hotkey": null,
+    "intro": "Rename the current project.",
+    "menu_path": "File/[1] Project/[2] Rename...",
+    "plugin_id": "renameproject",
+    "tags": [
+      "all"
+    ],
+    "title": "Rename Project",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "The new title for the current project.",
+        "enabled": true,
+        "id": "newProjectTitle",
+        "label": "Project title",
+        "placeHolder": "New project title...",
+        "type": "UserArgType.Text",
+        "val": "4WP4"
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:30:07.531697+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}

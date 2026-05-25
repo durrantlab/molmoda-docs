@@ -1,0 +1,39 @@
+{
+  "plugin_id": "drawmoleculeplugin",
+  "plugin_index": null,
+  "image": "widget.png",
+  "menu_image": "menu.png",
+  "plugin_info": {
+    "details": "This plugin also allows direct editing of the SMILES string via a text field under the editor.",
+    "hotkey": null,
+    "intro": "Use a molecular editor to draw or edit a small-molecule compound.",
+    "menu_path": "File/Import/[8] Draw...",
+    "plugin_id": "drawmoleculeplugin",
+    "tags": [
+      "all"
+    ],
+    "title": "Draw Molecule",
+    "user_args": [
+      {
+        "_dynamic_fields": [
+          "filterFunc",
+          "validateFunc",
+          "warningFunc"
+        ],
+        "description": "The name of the new molecule.",
+        "enabled": true,
+        "id": "drawMolName",
+        "label": "",
+        "placeHolder": "Name of the new molecule...",
+        "type": "UserArgType.Text",
+        "val": "DrawMolecule"
+      }
+    ]
+  },
+  "captured_at": "2026-05-25T20:30:38.494677+00:00",
+  "browser": "chrome-headless",
+  "viewport": {
+    "height": 941,
+    "width": 1365
+  }
+}
