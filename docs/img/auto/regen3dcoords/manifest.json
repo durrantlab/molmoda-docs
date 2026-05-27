@@ -63,10 +63,11 @@
       }
     ]
   },
-  "captured_at": "2026-05-25T20:32:00.657850+00:00",
+  "captured_at": "2026-05-27T03:40:45.939353+00:00",
   "browser": "chrome-headless",
   "viewport": {
     "height": 941,
     "width": 1365
-  }
+  },
+  "tour_url": "https://molmoda.org/?tour=regen3dcoords"
 }

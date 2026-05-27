@@ -1,7 +1,6 @@
 # Information
 
-The Information section of our application is a dedicated space designed to offer users immediate access to critical molecular property information.
-This feature enriches the user's understanding of molecular structures through a concise and informative display, encompassing a range of data points, including 2D representations, SMILES strings, and computed molecular properties.
+The Information panel gives you immediate access to molecular property data for the selected compound. It shows a 2D depiction, the SMILES string, and computed molecular properties in a concise display.
 
 ## Molecular properties
 

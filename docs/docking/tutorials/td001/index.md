@@ -1,5 +1,10 @@
 # TD001. Epidermal growth factor receptor inhibitors
 
+!!! warning
+
+    This tutorial was written for an older version of MolModa and may contain outdated information. That said, the general principles and workflow should still be applicable.
+    [Consult the documentation for each plugin](../../../plugins/) for the most up-to-date information on use.
+
 The Epidermal Growth Factor Receptor (EGFR) is crucial for cell growth and division, and its malfunction is implicated in many cancers.
 Targeting EGFR with FDA-approved inhibitors offers a strategic approach to cancer therapy.
 This MolModa tutorial demonstrates how to dock compounds into the EGFR structure.
@@ -25,7 +30,7 @@ At the end of this tutorial, you should be able to
 
 This tutorial guides you through loading the PDB structure [3W32](https://www.rcsb.org/structure/3w32) into MolModa.
 The 3W32 file provides a detailed representation of the EGFR kinase domain, a key target in cancer therapy.
-To load the structure, select `File` :material-arrow-right: `PDB ID`, then type in `3W32` and click `Load`.
+To load the structure, select `File` :material-arrow-right: `PDB ID` ([guided tour](https://molmoda.org/?tour=loadpdb){:target="_blank"}), then type in `3W32` and click `Load`.
 MolModa will load in the PDB file as shown below.
 
 <figure markdown>
@@ -92,7 +97,7 @@ We can ignore the water molecules in two ways: hide or delete.
 
 As mentioned previously, no hydrogen atoms exist in the original PDB structure.
 Since these are crucial to describe intermolecular interactions accurately, we have to add these in.
-MolModa provides an automated way to protonate the protein by selecting `Proteins` :material-arrow-right: `Protonation`.
+MolModa provides an automated way to protonate the protein by selecting `Proteins` :material-arrow-right: `Protonation` ([guided tour](https://molmoda.org/?tour=reduce){:target="_blank"}).
 
 === "1. Original"
 
@@ -152,7 +157,7 @@ For this tutorial, we will use the pocket containing the co-crystallized ligand.
 
 === "1. Detect pockets"
 
-    Select `Proteins` :material-arrow-right: `Detect Pockets` to get to this option menu.
+    Select `Proteins` :material-arrow-right: `Detect Pockets` ([guided tour](https://molmoda.org/?tour=fpocketweb){:target="_blank"}) to get to this option menu.
 
     <figure markdown>
     ![](../../../img/docking/td001/pockets/pocket-detection.png)
@@ -257,7 +262,7 @@ MolModa facilitates this process through an automated protonation tool.
 
 === "2. Options"
 
-    Access the protonation options by selecting `Compounds` :material-arrow-right: `Protonation`.
+    Access the protonation options by selecting `Compounds` :material-arrow-right: `Protonation` ([guided tour](https://molmoda.org/?tour=protonatecomps){:target="_blank"}).
     Ensure that the pH is set to 7.4 to reflect physiological conditions.
 
     <figure markdown>
@@ -292,7 +297,8 @@ Compounds with high-scoring poses that exhibit favorable interactions with the t
 
 === "1. Menu"
 
-    Begin docking by navigating to `Docking` :material-arrow-right: `Compound`.
+    Begin docking by navigating to `Docking` :material-arrow-right: `Compound` ([guided tour](https://molmoda.org/?tour=webina){:target="_blank"}).
+
     This opens the docking menu, where you can select your target pocket and the compounds to dock.
 
     <figure markdown>

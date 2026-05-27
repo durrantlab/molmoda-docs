@@ -29,10 +29,11 @@
       }
     ]
   },
-  "captured_at": "2026-05-25T20:30:51.530964+00:00",
+  "captured_at": "2026-05-27T03:38:54.476740+00:00",
   "browser": "chrome-headless",
   "viewport": {
     "height": 941,
     "width": 1365
-  }
+  },
+  "tour_url": "https://molmoda.org/?tour=reduce"
 }

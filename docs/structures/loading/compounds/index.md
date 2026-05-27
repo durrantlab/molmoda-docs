@@ -8,16 +8,11 @@ The `File` menu, shown below, contains several ways to import or load compounds 
 
 ## PubChem
 
-Integrating molecular compounds into your drug design workflow is streamlined with our tool's ability to directly interface with PubChem, a robust chemical database.
-This functionality enables you to easily import the structural data of compounds for docking experiments.
-Below, we guide you through the process of loading compounds using different methods available in our tool.
+Integrating molecular compounds into your drug design workflow is straightforward with direct access to PubChem, a large chemical database. This lets you import compound structures for docking experiments.
 
 === "Popup"
 
-    To initiate the compound loading process, our tool offers a user-friendly pop-up interface that interacts with PubChem.
-    This method simplifies the selection and importation of compound structures directly from the database.
-    Through the pop-up interface, users can search for compounds by name, formula, or other identifiers.
-    The interface presents a list of matching results from PubChem, allowing for an intuitive selection process.
+    `File` :material-arrow-right: `Import` :material-arrow-right: `Load Molecule from PubChem` ([guided tour](https://molmoda.org/?tour=loadpubchem){:target="_blank"}) opens an interface for searching PubChem by name, formula, or other identifiers. Matching results are displayed for selection.
 
     <figure markdown>
     ![](../../../img/structures/load-pubchem.png){ alight=left height=300 }
@@ -25,9 +20,7 @@ Below, we guide you through the process of loading compounds using different met
 
 === "Enter molecule name"
 
-    For users with specific compounds in mind, our tool provides an option to directly enter the name of the molecule.
-    This method bypasses the need for browsing the database manually, offering a quick and efficient way to proceed with the loading process.
-    Upon entering the molecule name, the system automatically queries PubChem for the corresponding compound. This feature is particularly useful for well-known compounds with unique names.
+    If you already know the compound you want, you can enter its name directly. The system queries PubChem for the corresponding compound, which is particularly useful for well-known compounds with unique names.
 
     <figure markdown>
     ![](../../../img/structures/lapatinib/lapatinib-initial.png){ alight=left height=300 }
@@ -35,15 +28,13 @@ Below, we guide you through the process of loading compounds using different met
 
 === "Auto CID lookup"
 
-    To further enhance user convenience, our tool incorporates an Auto CID lookup feature.
-    When a molecule name is provided, the tool not only searches for the compound but also automatically retrieves its Chemical Identifier (CID) from PubChem.
-    This automatic lookup streamlines the process, ensuring that the correct compound is selected without the need for manual verification of CIDs.
+    When a molecule name is provided, MolModa automatically retrieves the PubChem Chemical Identifier (CID), so you don't have to look it up manually.
 
     <figure markdown>
     ![](../../../img/structures/lapatinib/lapatinib-found.png){ alight=left height=300 }
     </figure>
 
-After selecting the compound through any of the aforementioned methods, the tool displays a confirmation of the loaded compound structure. This visual representation confirms that the correct compound is ready for further analysis and integration into your drug design workflow.
+After selecting the compound, the loaded structure is shown for confirmation and is ready for further analysis.
 
 <figure markdown>
 ![](../../../img/structures/lapatinib/lapatinib-loaded.png){ alight=left height=300 }
@@ -51,8 +42,7 @@ After selecting the compound through any of the aforementioned methods, the tool
 
 ## Text
 
-Our computer-aided drug design platform provides the flexibility to import molecular structures not only from databases like PubChem but also directly from external files or through pasting text-based representations.
-This feature supports a variety of file formats and notation types, catering to the diverse needs of researchers in the field.
+You can also import molecular structures from text-based representations or files. This supports a variety of formats, including those used by other software in the drug discovery space. Access this option via `File` :material-arrow-right: `Import` :material-arrow-right: `Molecular Text` ([guided tour](https://molmoda.org/?tour=moltextplugin){:target="_blank"}).
 
 <figure markdown>
 ![](../../../img/structures/load-string.png){ alight=left height=300 }
@@ -60,12 +50,12 @@ This feature supports a variety of file formats and notation types, catering to 
 
 ### Supported formats
 
-The tool accepts molecular data in several widely used formats, ensuring compatibility with other software and databases in the field of drug discovery. Supported formats include:
+The tool accepts molecular data in several widely used formats, ensuring compatibility with other software and databases:
 
--   PDB (Protein Data Bank): A standard format for the three-dimensional structural data of proteins and nucleic acids.
--   mol2: A file format used to describe the structure of chemical molecules containing atoms, bonds, coordinates, and other information.
--   SDF (Structure-Data File): A file format used to represent multiple chemical compound information, supporting a wide range of chemical data fields.
--   SMILES (Simplified Molecular Input Line Entry System): A notation that allows a user to represent a chemical structure in a way that can be used by the computer.
+- **PDB** (Protein Data Bank): A standard format for the three-dimensional structural data of proteins and nucleic acids.
+- **mol2**: A file format used to describe the structure of chemical molecules containing atoms, bonds, coordinates, and other information.
+- **SDF** (Structure-Data File): A file format used to represent multiple chemical compound information, supporting a wide range of chemical data fields.
+- **SMILES** (Simplified Molecular Input Line Entry System): A notation that allows a user to represent a chemical structure in a way that can be used by the computer.
 
 === "smiles"
 
@@ -632,21 +622,38 @@ The tool accepts molecular data in several widely used formats, ensuring compati
 
 ## Draw
 
-For a more hands-on approach to molecule design, our drug design platform includes a drawing tool that enables the detailed creation of small-molecule compounds.
-This powerful feature allows for the visualization and manual construction of molecules, providing an interactive way to design and modify structures with precision.
-
-The drawing tool presents a canvas within the interface, where users can draw the structure of a molecule using a variety of drawing elements and tools.
+For a hands-on approach to molecule design, MolModa includes a drawing tool that lets you build small-molecule compounds atom by atom. Open it with `File` :material-arrow-right: `Import` :material-arrow-right: `Draw Molecule` ([guided tour](https://molmoda.org/?tour=drawmoleculeplugin){:target="_blank"}).
 
 <figure markdown>
 ![](../../../img/structures/draw-molecule.png){ alight=left height=300 }
 </figure>
 
-### How to Use the Drawing Tool
+### How to use the drawing tool
 
--   **Select a tool:** Click on the desired tool from the toolbar to begin creating your molecule.
-    Options include drawing single, double, or triple bonds, adding atoms, and more.
--   **Draw the molecule:** Click and drag on the canvas to place atoms and bonds.
-    The drawing interface is intuitive, allowing you to visualize the molecular structure as it is created.
--   **Edit as needed:** Use the selection tool to adjust atoms and bonds, or to correct any part of the molecule.
-    The eraser tool can remove specific parts of the structure, while the charge tool can add charges to atoms.
--   **Confirm the structure:** Once the molecule is complete, review the structure to ensure it matches the intended design.
+- **Select a tool**: Click on the desired tool from the toolbar to begin creating your molecule. Options include drawing single, double, or triple bonds, adding atoms, and more.
+- **Draw the molecule**: Click and drag on the canvas to place atoms and bonds. The interface is intuitive, letting you visualize the molecular structure as it is created.
+- **Edit as needed**: Use the selection tool to adjust atoms and bonds. The eraser tool removes specific parts of the structure, while the charge tool adds charges to atoms.
+- **Confirm the structure**: Once the molecule is complete, review it to ensure it matches your intended design.
+
+To edit a compound that is already loaded, select it in the Navigator and use `Compounds` :material-arrow-right: `Build` :material-arrow-right: `Edit Compound` ([guided tour](https://molmoda.org/?tour=editcompound){:target="_blank"}).
+
+## Preparing compounds
+
+Before docking, compounds typically need preparation:
+
+- `Protonate/Deprotonate Compounds` (`Compounds` :material-arrow-right: `Build`) ([guided tour](https://molmoda.org/?tour=protonatecomps){:target="_blank"}) assigns protonation states for a given pH.
+- `Rebuild Compound Coordinates` (`Compounds` :material-arrow-right: `Build`) ([guided tour](https://molmoda.org/?tour=regen3dcoords){:target="_blank"}) regenerates 3D atomic coordinates, useful when starting from a SMILES string or a 2D representation.
+
+## Finding similar compounds
+
+`Compounds` :material-arrow-right: `Create Library` :material-arrow-right: `Find Similar Compounds` ([guided tour](https://molmoda.org/?tour=pubchemfindsimilar){:target="_blank"}) builds a library of chemically similar analogs by searching PubChem. This is a quick way to expand a starting compound into a screening set.
+
+## Retrieving compound information
+
+Three plugins under `Compounds` :material-arrow-right: `Information` annotate selected compounds with data from PubChem:
+
+- `Compound Names` ([guided tour](https://molmoda.org/?tour=pubchemnames){:target="_blank"}) — retrieves names and synonyms.
+- `PubChem Properties` ([guided tour](https://molmoda.org/?tour=pubchemprops){:target="_blank"}) — retrieves chemical properties.
+- `PubChem Bioassays` ([guided tour](https://molmoda.org/?tour=pubchembioassays){:target="_blank"}) — retrieves bioassay results.
+
+Results appear in the Data panel and can be sorted and filtered alongside docking output.

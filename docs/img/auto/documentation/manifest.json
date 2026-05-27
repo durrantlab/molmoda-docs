@@ -15,10 +15,11 @@
     "title": "Documentation",
     "user_args": []
   },
-  "captured_at": "2026-05-25T20:31:11.950590+00:00",
+  "captured_at": "2026-05-27T03:39:25.015644+00:00",
   "browser": "chrome-headless",
   "viewport": {
     "height": 941,
     "width": 1365
-  }
+  },
+  "tour_url": "https://molmoda.org/?tour=documentation"
 }

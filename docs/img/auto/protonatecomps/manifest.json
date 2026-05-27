@@ -86,10 +86,11 @@
       }
     ]
   },
-  "captured_at": "2026-05-25T20:31:56.495364+00:00",
+  "captured_at": "2026-05-27T03:41:03.112441+00:00",
   "browser": "chrome-headless",
   "viewport": {
     "height": 941,
     "width": 1365
-  }
+  },
+  "tour_url": "https://molmoda.org/?tour=protonatecomps"
 }

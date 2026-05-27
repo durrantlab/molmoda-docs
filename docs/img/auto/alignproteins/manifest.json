@@ -24,7 +24,7 @@
         "id": "referenceMolecule",
         "label": "Reference (template) protein",
         "type": "UserArgType.SelectMolecule",
-        "val": "id_z7r4h9rrn3l"
+        "val": "id_16s3e38x3ud"
       },
       {
         "_dynamic_fields": [
@@ -41,10 +41,11 @@
       }
     ]
   },
-  "captured_at": "2026-05-25T20:30:21.971862+00:00",
+  "captured_at": "2026-05-27T03:38:50.493344+00:00",
   "browser": "chrome-headless",
   "viewport": {
     "height": 941,
     "width": 1365
-  }
+  },
+  "tour_url": "https://molmoda.org/?tour=alignproteins"
 }

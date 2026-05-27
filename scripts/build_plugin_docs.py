@@ -107,7 +107,8 @@ class PluginRecord:
     # Sort key for the plugin's own position among its menu siblings.
     leaf_sort_key: int = DEFAULT_SORT_KEY
     leaf_label: str = ""
-
+    # Optional URL to an in-app guided tour for this plugin.
+    tour_url: str | None = None
 
 @dataclass
 class MenuNode:
@@ -340,6 +341,11 @@ def load_manifest(path: Path) -> PluginRecord | None:
     leaf_sort_key = segments[-1].sort_key if segments else DEFAULT_SORT_KEY
     leaf_label = segments[-1].label if segments else (info.get("title") or plugin_id)
 
+    # tour_url lives at the top level of the manifest, not under plugin_info.
+    # Treat empty strings as missing so they don't render as broken links.
+    raw_tour_url = data.get("tour_url")
+    tour_url = raw_tour_url.strip() if isinstance(raw_tour_url, str) and raw_tour_url.strip() else None
+
     return PluginRecord(
         plugin_id=plugin_id,
         title=(info.get("title") or plugin_id).strip(),
@@ -355,6 +361,7 @@ def load_manifest(path: Path) -> PluginRecord | None:
         captured_at=(data.get("captured_at") or "")[:10],
         leaf_sort_key=leaf_sort_key,
         leaf_label=leaf_label,
+        tour_url=tour_url,
     )
 
 def image_prefix_for(page_dir: Path) -> str:
@@ -382,6 +389,17 @@ def render_plugin_page(rec: PluginRecord, page_dir: Path) -> str:
         out.append("")
     if rec.hotkey:
         out.append(f"**Hotkey:** {rec.hotkey}")
+        out.append("")
+    # Guided tour link goes after Menu/Hotkey so the metadata block reads
+    # as a single cluster before the prose description. Rendered as raw
+    # HTML because Markdown's link syntax can't set target="_blank"; the
+    # rel attribute closes the reverse-tabnabbing hole opened by _blank.
+    if rec.tour_url:
+        tour_href = html.escape(rec.tour_url, quote=True)
+        out.append(
+            f'**Guided tour:** <a href="{tour_href}" target="_blank" '
+            f'rel="noopener noreferrer">Launch in MolModa</a>'
+        )
         out.append("")
     if rec.details and rec.details != rec.intro:
         out.append(rec.details)
